@@ -1,0 +1,198 @@
+/* ===== PRICING SECTION ===== */
+.pricing {
+  background: #f8fdfc;
+  padding: 80px 0;
+}
+
+.pricing-subtitle-text {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.pricing-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pricing-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ===== LISTS WRAPPER ===== */
+.pricing-lists {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap; /* ВАЖНО для планшета */
+}
+
+/* ===== CARD ===== */
+.pricing-list-content {
+  width: 322px;
+  min-height: 456px;
+  border-radius: 8px;
+  background: #fff;
+  color: #22343d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* featured card */
+.pricing-list-content.featured {
+  background: #02897a;
+  color: #fff;
+}
+
+/* ===== CARD CONTENT ===== */
+.pricing-list-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 32px;
+}
+
+.pricing-list-text {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* price row */
+.pricing-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.first-item {
+  font-weight: 700;
+  font-size: 76px;
+  color: #02897a;
+}
+
+.second-item {
+  font-weight: 700;
+  font-size: 24px;
+  color: #02897a;
+}
+
+.third-item {
+  font-size: 16px;
+  color: #afafaf;
+}
+
+/* features */
+.price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.price-item-text {
+  font-size: 16px;
+  color: #22343d;
+}
+
+/* ===== BUTTON ===== */
+.pricing-btn {
+  width: 139px;
+  height: 44px;
+  margin: 40px auto 32px;
+  border-radius: 8px;
+  background: #02897a;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.pricing-btn:hover {
+  background-color: #02a087;
+  transform: scale(1.05);
+}
+
+/* featured overrides */
+.pricing-list-content.featured .first-item,
+.pricing-list-content.featured .second-item,
+.pricing-list-content.featured .third-item,
+.pricing-list-content.featured .pricing-list-subtitle,
+.pricing-list-content.featured .pricing-list-text,
+.pricing-list-content.featured .price-item-text {
+  color: #fff;
+}
+
+.pricing-list-content.featured .pricing-btn {
+  background: #fff;
+  color: #02897a;
+}
+
+.pricing-list-content.featured .pricing-btn:hover {
+  background: #f0f0f0;
+}
+
+/* ================== BREAKPOINTS ================== */
+
+/* 📱 MOBILE ≤ 412px */
+@media (max-width: 412px) {
+  .pricing-lists {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-list-content {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .pricing-title {
+    font-size: 28px;
+  }
+}
+
+/* 📱📲 TABLET ≥ 768px */
+@media (min-width: 768px) and (max-width: 1149px) {
+  .pricing-lists {
+    justify-content: center;
+  }
+
+  .pricing-list-content {
+    width: 322px;
+  }
+
+  /* третья карточка по центру */
+  .pricing-list-content:nth-child(3) {
+    margin: 0 auto;
+  }
+}
+
+/* 🖥 DESKTOP ≥ 1150px */
+@media (min-width: 1150px) {
+  .pricing-lists {
+    gap: 72px;
+    flex-wrap: nowrap;
+  }
+  .pricing-list-content {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* базовая тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ← вот это главное */
+  }
+  .pricing-list-content:hover,
+  .pricing-list-content:focus {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+}

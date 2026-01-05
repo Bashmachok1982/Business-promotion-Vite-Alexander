@@ -1,0 +1,71 @@
+<section class="communications">
+  <div class="container">
+    <div class="communications-content">
+      <picture>
+        <!-- Десктоп от 1150px -->
+        <source
+          srcset="
+            ./img/communications-desktop-1x.webp,
+            ./img/communications-desktop-2x.webp
+          "
+          media="(min-width: 1150px)"
+        />
+        <!-- Планшет от 768px -->
+        <source
+          srcset="
+            ./img/communications-tablet-1x.webp,
+            ./img/communications-tablet-2x.webp
+          "
+          media="(min-width: 768px)"
+        />
+        <!-- Мобилка до 767px -->
+        <source
+          srcset="
+            ./img/communications-mobile-1x.webp,
+            ./img/communications-mobile-2x.webp
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="communications-img"
+          src="./img/communications-desktop-2x.webp"
+          alt="communications"
+        />
+      </picture>
+      <ul class="communications-list">
+        <li class="communications-list-item">
+          <h1 class="communications-title">
+            Great Business <br />
+            made with Product.
+          </h1>
+        </li>
+        <li class="communications-list-item">
+          <p class="communications-text">
+            Build better customer relationships easily messaging that provides a
+            more personal experience for you and your customers.
+          </p>
+        </li>
+        <li class="communications-list-item">
+          <div class="input-btn">
+            <input
+              class="communications-input"
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit" class="communications-btn">Join Now</button>
+          </div>
+        </li>
+        <li class="communications-list-item">
+          <div class="communications-group">
+            <img src="./img/group-people.webp" alt="Group people" />
+            <p class="communications-text">
+              Join over <span class="span-count-text">4,000+</span> other
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

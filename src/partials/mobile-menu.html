@@ -1,0 +1,74 @@
+<!-- Mobile menu -->
+<div class="mobile-menu">
+  <!--добавить в класс mobile-menu is-open, чтобы открыть модалку, и убрать чтобы закрыть -->
+  <div class="modal-menu">
+    <button class="menu-close-btn" type="button">
+      <svg class="menu-close-icon" width="8" height="8">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <div class="header-menu">
+      <nav class="mobile-nav">
+        <ul class="mobile-list">
+          <li class="mobile-item">
+            <a href="./Product.html" class="mobile-link current">Product</a>
+          </li>
+          <li class="mobile-item">
+            <a href="./Pricing.html" class="mobile-link">Pricing</a>
+          </li>
+          <li class="mobile-item">
+            <a href="./Customer.html" class="mobile-link">Customer</a>
+          </li>
+          <li class="mobile-item">
+            <a href="./Resources.html" class="mobile-link">Resources</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="mobile-socials">
+        <li>
+          <a href="#" class="mobile-social-link">
+            <svg class="mobile-social-icon">
+              <use href="./img/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mobile-social-link">
+            <svg class="mobile-social-icon">
+              <use href="./img/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mobile-social-link">
+            <svg class="mobile-social-icon">
+              <use href="./img/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <!-- Кнопки -->
+      <div class="mobile-menu-auth unauth">
+        <ul class="header-list-btn">
+          <li class="header-item-btn">
+            <button class="mobile-header-btn-in" data-modal-open="signin">Sign In</button>
+              Sign In
+            </button>
+          </li>
+          <li class="header-item-btn">
+            <button class="mobile-header-btn-up" data-modal-open="signup">Sign Up</button>
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- Добавь приветствие в мобильное меню, если залогинен -->
+<div class="mobile-menu-user auth" style="display: none;">
+  <span class="user-name-mobile">Welcome, <span id="mobile-user-name"></span></span>
+  <button type="button" class="logout-btn-mobile">Logout</button>
+</div>
+    </div>
+  </div>
+</div>

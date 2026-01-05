@@ -1,0 +1,148 @@
+/* ========================Модалки Sign In/Sign Up======*/
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.backdrop.is-modal-open {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  min-width: 320px;
+  max-width: 500px;
+  animation: scaleIn 0.3s ease;
+  background: #f8fdfc;
+  border: 4px solid #02897a;
+}
+
+.modal-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.modal-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.modal-submit {
+  width: 100%;
+  padding: 10px;
+  background: #02897a;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.error-message {
+  min-height: 24px;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #d93025; /* красный как в Google */
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Опционально: красная обводка на ошибочных полях */
+.modal-form input:invalid:focus {
+  border-color: #d93025;
+  box-shadow: 0 0 0 2px rgba(217, 48, 37, 0.2);
+}
+.header-auth .unauth {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.header-auth .auth {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 600;
+  color: #173a56;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid #02897a;
+  border-radius: 4px;
+  color: #02897a;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background: #02897a;
+  color: #fff;
+}
+.password-label {
+  position: relative; /* важно для абсолютного позиционирования глазка */
+  display: block;
+  margin-bottom: 12px; /* отступ между полями */
+}
+
+.password-input {
+  width: 100%;
+  padding: 12px 44px 12px 12px; /* справа больше места под глазик */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px; /* отступ от правого края */
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #173a56;
+  padding: 4px;
+  line-height: 1;
+}
+
+.toggle-password:hover {
+  color: #02897a;
+}
+
+/* Фокус на инпуте — лёгкая подсветка */
+.password-input:focus {
+  outline: none;
+  border-color: #02897a;
+  box-shadow: 0 0 0 2px rgba(2, 137, 122, 0.2);
+}

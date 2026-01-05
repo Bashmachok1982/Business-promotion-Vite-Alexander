@@ -1,0 +1,149 @@
+/*======================================== COLLABORATION ================================================*/
+.collaboration {
+  background: #f8fdfc;
+}
+
+.collaboration .container {
+  display: flex;
+  align-items: center; /* выравниваем по вертикали */
+  justify-content: space-between; /* отталкиваем контент и картинку */
+  margin-bottom: 150px;
+  flex-direction: column-reverse;
+}
+.collaboration-content {
+  flex: 1; /* занимает доступное место слева */
+  max-width: 350px;
+}
+.collaboration-subtitle {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+}
+.collaboration-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+.collaboration-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+.collaboration-list {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.collaboration-subtitle-item {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+}
+.collaboration-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.collaboration-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 350px;
+}
+/*============================================COLLABORATION TABLET===================================*/
+@media (min-width: 768px) and (max-width: 1149px) {
+  .collaboration-image img {
+    height: auto;
+    display: block;
+    max-width: 610px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .collaboration-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+/*============================================COLLABORATION DESKTOP====================================*/
+@media (min-width: 1150px) {
+  .collaboration {
+    padding: 20px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+  .collaboration .container {
+    display: flex;
+    align-items: center; /* выравниваем по вертикали */
+    justify-content: space-between; /* отталкиваем контент и картинку */
+    flex-direction: row;
+  }
+  .collaboration-content {
+    flex: 1; /* занимает доступное место слева */
+    max-width: 486px;
+  }
+  .collaboration-subtitle {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #22343d;
+  }
+  .collaboration-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #22343d;
+    margin-bottom: 25px;
+  }
+  .collaboration-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #22343d;
+  }
+  .collaboration-list {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .collaboration-subtitle-item {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #22343d;
+  }
+  .collaboration-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 84px; /* отступ слева от контента */
+  }
+
+  .collaboration-image img {
+    height: auto;
+    display: block;
+    max-width: 610px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,46 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">Work at the speed of thought</h1>
+      <p class="hero-text">
+        Tools, tutorials, design and innovation experts, all in one place! The
+        most intuitive way to imagine your next user experience.
+      </p>
+      <div class="hero-btn">
+        <button
+          type="button"
+          class="hero-btn-getstart"
+          data-modal-open="signup"
+        >
+          Get started
+        </button>
+        <button type="button" class="hero-btn-watch" data-modal-open="video">
+          <svg class="triangle-btn" width="28" height="32">
+            <use href="./img/icons.svg#icon-triangle"></use>
+          </svg>
+          Watch the Video
+        </button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <picture>
+        <!-- Десктоп от 1150px -->
+        <source
+          srcset="./img/hero-desktop-1x.webp, ./img/hero-desktop-2x.webp"
+          media="(min-width: 1150px)"
+        />
+        <!-- Планшет от 768px -->
+        <source
+          srcset="./img/hero-tablet-1x.webp, ./img/hero-tablet-2x.webp"
+          media="(min-width: 768px)"
+        />
+        <!-- Мобилка до 767px -->
+        <source
+          srcset="./img/hero-mobile-1x.webp, ./img/hero-mobile-2x.webp"
+          media="(max-width: 767px)"
+        />
+        <img class="hero-img" src="./img/hero-desktop-2x.webp" alt="amico" />
+      </picture>
+    </div>
+  </div>
+</section>

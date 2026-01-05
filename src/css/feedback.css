@@ -1,0 +1,147 @@
+.feedback {
+  background: #f8fdfc;
+}
+.feedback-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.feedback-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  color: #22343d;
+  max-width: 537px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feedback-list {
+  display: flex;
+  margin-top: 40px;
+}
+
+.feedback-list-item {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 20px 20px;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ⭐ ЗВЁЗДЫ — ТВОИ, БЕЗ ИЗМЕНЕНИЙ */
+.star {
+  width: 19px;
+  height: 18px;
+  flex-shrink: 0;
+  fill: #fbbf24;
+}
+
+.star:last-child {
+  fill: #d1d5db;
+}
+
+.feedback-rating {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.feedback-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  color: #737373;
+  margin-bottom: 16px;
+}
+
+.feedback-author {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.feedback-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.feedback-author-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+}
+
+.feedback-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #02897a;
+}
+
+.feedback-item-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  color: #252b42;
+}
+@media screen and (max-width: 767px) {
+  .feedback-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .feedback-list-item {
+    width: 100%;
+    max-width: 327px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feedback-title {
+    font-size: 32px;
+  }
+
+  .feedback-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .feedback-list-item {
+    width: 327px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .feedback-list {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+  }
+
+  .feedback-list-item {
+    width: calc((100% - 2 * 64px) / 3);
+    height: 240px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* базовая тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ← вот это главное */
+  }
+  .feedback-list-item:hover,
+  .feedback-list-item:focus {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+}

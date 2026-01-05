@@ -1,0 +1,26 @@
+<!-- video-modal.html -->
+<div class="backdrop video-backdrop" data-modal="video">
+  <div class="video-modal">
+    <button
+      type="button"
+      class="modal-close video-close"
+      aria-label="Close video"
+    >
+      <svg class="video-close-icon" width="18" height="18">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="video-wrapper">
+      <!-- Замени ID на свой, когда будет видео -->
+      <iframe
+        id="promo-video-iframe"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+        title="Product Demo Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+  </div>
+</div>

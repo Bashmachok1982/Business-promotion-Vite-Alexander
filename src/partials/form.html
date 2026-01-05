@@ -1,0 +1,87 @@
+<section class="form">
+  <div class="container">
+    <h2 class="form-title">Contact Us</h2>
+    <p class="form-text">
+      Need more detailed information? Get in touch with us.
+    </p>
+
+    <ul class="form-list-icons">
+      <li class="form-item-icons">
+        <a href="#" class="form-social-link">
+          <svg class="form-icons" width="24" height="24">
+            <use href="./img/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="form-item-icons">
+        <a href="#" class="form-social-link">
+          <svg class="form-icons" width="24" height="24">
+            <use href="./img/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="form-item-icons">
+        <a href="#" class="form-social-link">
+          <svg class="form-icons" width="24" height="24">
+            <use href="./img/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <picture>
+      <!-- Десктоп от 1150px -->
+      <source
+        srcset="./img/form-desktop-1x.webp, ./img/form-desktop-2x.webp"
+        media="(min-width: 1150px)"
+      />
+      <!-- Планшет от 768px -->
+      <source
+        srcset="./img/form-tablet-1x.webp, ./img/form-tablet-2x.webp"
+        media="(min-width: 768px)"
+      />
+      <!-- Мобилка до 767px -->
+      <source
+        srcset="./img/form-mobile-1x.webp, ./img/form-mobile-2x.webp"
+        media="(max-width: 767px)"
+      />
+      <img class="form-img" src="./img/form-desktop-2x.webp" alt="map" />
+    </picture>
+    <div class="form-input-box">
+      <h3 class="form-subtitle">Send a message</h3>
+
+      <ul class="form-input-list">
+        <li class="input-item">
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+        </li>
+        <li class="input-item">
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+        </li>
+        <li class="input-item">
+          <textarea
+            class="form-textarea"
+            name="message"
+            placeholder="Your Message"
+            rows="6"
+            required
+          ></textarea>
+        </li>
+        <li class="input-item btn-input">
+          <button type="submit" class="form-btn">Send</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

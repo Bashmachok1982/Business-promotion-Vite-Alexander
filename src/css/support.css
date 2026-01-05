@@ -1,0 +1,214 @@
+/*======================================== SUPPORT================================================*/
+.support {
+  padding: 20px 0;
+  background: #f8fdfc;
+}
+.container {
+  height: 100%;
+  padding: 0 30px;
+}
+.support-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.support-image img {
+  height: auto;
+  display: block;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+.support-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 340px;
+  margin: 0 auto;
+}
+.support-subtitle {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  text-align: center;
+}
+.support-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #22343d;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.support-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  margin-bottom: 16px;
+  text-align: start;
+}
+.support-list {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+.support-list-item {
+  display: flex;
+  align-items: flex-start; /* иконка сверху с текстом */
+  gap: 30px;
+}
+.icon-box {
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  border: 2.92px solid #fff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 35px; /* фиксированный размер */
+  /* по умолчанию фон — чтобы не был прозрачным */
+  background: #f90;
+}
+.support-icons {
+  width: 12px;
+  height: 12px;
+  display: block;
+  fill: #fff; /* если иконка построена через path и наследует fill */
+  stroke: none;
+}
+.support-list-item:nth-child(1) .icon-box {
+  background: #f90;
+}
+.support-list-item:nth-child(2) .icon-box {
+  background: #f03e3d;
+}
+.support-list-item:nth-child(3) .icon-box {
+  background: #4d8dff;
+}
+/*============================================SUPPORT TABLET===================================*/
+@media (min-width: 768px) and (max-width: 1149px) {
+  .support-image img {
+    height: auto;
+    display: block;
+    max-width: 610px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .support-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+/*============================================SUPPORT DESKTOP====================================*/
+@media (min-width: 1150px) {
+  .support {
+    padding: 20px 0;
+  }
+  .support .container {
+    display: flex;
+    align-items: center; /* выравниваем по вертикали */
+    justify-content: space-between; /* отталкиваем контент и картинку */
+  }
+  .support-content {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .support-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #22343d;
+    margin-bottom: 25px;
+  }
+  .support-subtitle {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #22343d;
+  }
+  .support-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #22343d;
+  }
+  .support-list {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+  }
+  .support-list-item {
+    display: flex;
+    align-items: flex-start; /* иконка сверху с текстом */
+    gap: 30px;
+  }
+  .support-list-item .support-text {
+    margin: 0; /* убираем лишние отступы абзаца */
+  }
+  /* контейнер квадратика */
+  .icon-box {
+    box-sizing: border-box;
+    width: 35px;
+    height: 35px;
+    border: 2.92px solid #fff;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 35px; /* фиксированный размер */
+    /* по умолчанию фон — чтобы не был прозрачным */
+    background: #f90;
+  }
+  /* svg внутри — белая галочка */
+  .icon-box .support-icons {
+    width: 12px;
+    height: 12px;
+    display: block;
+    fill: #fff; /* если иконка построена через path и наследует fill */
+    stroke: none;
+  }
+  /* индивидуальные цвета для каждого пункта (1-й, 2-й, 3-й) */
+  .support-list-item:nth-child(1) .icon-box {
+    background: #f90;
+  }
+  .support-list-item:nth-child(2) .icon-box {
+    background: #f03e3d;
+  }
+  .support-list-item:nth-child(3) .icon-box {
+    background: #4d8dff;
+  }
+
+  .support-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 84px; /* отступ слева от контента */
+  }
+
+  .support-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}

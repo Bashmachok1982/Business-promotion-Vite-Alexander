@@ -1,0 +1,153 @@
+/* =========================
+   1. ОБЩИЕ СТИЛИ (BASE)
+   mobile-first
+========================= */
+
+.promo {
+  background: #f8fdfc;
+}
+
+.promo-content {
+  border-radius: 32px;
+  background: #02897a;
+  display: flex;
+  margin: 60px auto;
+}
+
+.promo-title-btn {
+  display: flex;
+}
+
+.promo-title {
+  font-weight: 600;
+  color: #fff;
+}
+
+.promo-btn {
+  border-radius: 8px;
+  background: #fff;
+  font-weight: 600;
+  transition: box-shadow 300ms ease, transform 300ms ease;
+}
+
+body.product .promo-btn {
+  color: #02897a;
+}
+
+body.customer .promo-btn,
+body.pricing .promo-btn {
+  color: #22343d;
+}
+
+.promo-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.promo-btn:hover,
+.promo-btn:focus {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   2. MOBILE ≤767px (412)
+========================= */
+
+@media screen and (max-width: 767px) {
+  .promo-content {
+    width: calc(100% - 32px);
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+    gap: 24px;
+  }
+
+  .promo-title-btn {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .promo-title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+
+  .promo-btn {
+    width: 160px;
+    height: 48px;
+  }
+
+  .promo-img {
+    margin: 0;
+  }
+}
+
+/* =========================
+   3. TABLET ≥768px
+========================= */
+
+@media screen and (min-width: 768px) {
+  .promo-content {
+    width: 720px;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 32px;
+  }
+
+  .promo-title-btn {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .promo-title {
+    font-size: 32px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-bottom: 24px;
+  }
+
+  .promo-btn {
+    width: 170px;
+    height: 50px;
+  }
+
+  .promo-img {
+    margin: 0;
+  }
+}
+
+/* =========================
+   4. DESKTOP ≥1150px
+========================= */
+
+@media screen and (min-width: 1150px) {
+  .promo-content {
+    width: 968px;
+    height: 345px;
+    flex-direction: row;
+    padding: 0;
+    gap: 0;
+    margin: 100px auto;
+  }
+
+  .promo-title-btn {
+    align-items: flex-start;
+    text-align: left;
+    padding: 46px 10px 46px 46px;
+  }
+
+  .promo-title {
+    max-width: 510px;
+    margin-bottom: 46px;
+  }
+
+  .promo-img {
+    margin: 8px 46px 8px 10px;
+  }
+}

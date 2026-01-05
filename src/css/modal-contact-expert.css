@@ -1,0 +1,74 @@
+/* =============== CONTACT MODAL STYLES =============== */
+/* Наследует базовые .backdrop и .modal из твоего основного CSS, добавляем только специфическое */
+.contact-backdrop {
+  /* Ничего дополнительного, использует общие стили */
+}
+
+.modal-text {
+  font-size: 16px;
+  color: #22343d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.message {
+  min-height: 24px;
+  margin: 12px 0;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.message.success {
+  color: #02897a; /* зелёный для успеха */
+}
+
+.message.error {
+  color: #d93025; /* красный для ошибки */
+}
+
+/* Для футер-формы — стили input и кнопки (если нужно доработать) */
+.footer-input-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.footer-input-icons {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-input {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* место под иконку */
+  border: 1px solid #bcd0e5;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.footer-btn {
+  width: 100%;
+  padding: 12px;
+  background: #02897a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-btn:hover {
+  background: #02a087;
+}

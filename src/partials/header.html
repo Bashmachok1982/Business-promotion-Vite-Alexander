@@ -1,19 +1,66 @@
+<!-- ================= Mobile header (412 × 70) ================= -->
 <header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+    <div class="navigation">
+      <nav class="header-nav">
+        <a href="./index.html" class="logo">
+          <img src="./img/logo.webp" alt="logo" />Product
+        </a>
+
+        <!-- Селект для планшета -->
+        <select class="nav-select" aria-label="Navigation">
+          <option value="./Product.html">Product</option>
+          <option value="./Pricing.html">Pricing</option>
+          <option value="./Customer.html">Customer</option>
+          <option value="./Resources.html">Resources</option>
+        </select>
+
+        <!-- Обычный список (будет только на десктопе) -->
+        <ul class="header-list">
+          <li class="header-item">
+            <a href="./Product.html" class="header-link current">Product</a>
+          </li>
+          <li class="header-item">
+            <a href="./Pricing.html" class="header-link">Pricing</a>
+          </li>
+          <li class="header-item">
+            <a href="./Customer.html" class="header-link">Customer</a>
+          </li>
+          <li class="header-item">
+            <a href="./Resources.html" class="header-link">Resources</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Кнопки авторизации / приветствие -->
+    <div class="header-auth">
+      <!-- Неавторизован — показываем кнопки -->
+      <ul class="header-list-btn unauth">
+        <li class="header-item-btn">
+          <button type="button" data-modal-open="signin" class="header-btn-in">
+            Sign In
+          </button>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="header-item-btn">
+          <button type="button" data-modal-open="signup" class="header-btn-up">
+            Sign Up
+          </button>
         </li>
       </ul>
-    </nav>
+
+      <!-- Авторизован — показываем приветствие -->
+      <div class="header-user auth" style="display: none">
+        <span class="user-name">Welcome, User</span>
+        <button type="button" class="logout-btn">Logout</button>
+      </div>
+    </div>
+
+    <!-- Бургер -->
+    <button type="button" class="menu-toggle" aria-label="Open menu">
+      <svg class="menu-icon" width="32" height="32">
+        <use href="./img/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
   </div>
 </header>
