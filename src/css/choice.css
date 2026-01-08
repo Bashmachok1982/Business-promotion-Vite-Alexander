@@ -1,0 +1,157 @@
+/* ======================== CHOICE SECTION ======================== */
+.choice {
+  padding: 100px 0;
+  background: #edfffc; /* лёгкий зелёный оттенок, чтобы выделялась на белом фоне */
+}
+
+.choice-title {
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 50px;
+}
+
+/* Общий стиль списка */
+.choice-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Карточка */
+.choice-list-item {
+  flex: 1 1 300px; /* гибкая ширина, минимум 300px */
+  max-width: 360px;
+  background: #fff;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  padding: 32px 20px 34px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choice-list-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Иконка */
+.choice-icon-wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.choice-icon-wrap i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.choice-icon-wrap.green {
+  background: #02897a;
+}
+
+.choice-icon-wrap.blue {
+  background: #4d8dff;
+}
+
+.choice-icon-wrap.red {
+  background: #f03e3d;
+}
+
+/* Текст */
+.choice-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.375;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.choice-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6875;
+  letter-spacing: 0.01em;
+  color: #22343d;
+  max-width: 275px;
+  margin: 0;
+}
+
+/* ======================== MOBILE (< 768px) ======================== */
+@media (max-width: 767px) {
+  .choice {
+    padding: 80px 0;
+  }
+
+  .choice-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .choice-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .choice-list-item {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
+/* ======================== TABLET (768px – 1149px) ======================== */
+@media (min-width: 768px) and (max-width: 1149px) {
+  .choice-title {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+  .choice-list {
+    justify-content: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .choice-list-item {
+    flex: 0 0 calc(50% - 20px); /* две карточки в ряд */
+  }
+
+  /* Третья карточка по центру ниже */
+  .choice-list-item:nth-child(3) {
+    flex: 0 0 calc(50% - 20px);
+    margin: 0 auto;
+  }
+}
+
+/* ======================== DESKTOP (≥ 1150px) ======================== */
+@media (min-width: 1150px) {
+  .choice-title {
+    font-size: 40px;
+  }
+
+  .choice-list {
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .choice-list-item {
+    flex: 0 0 calc((100% - 60px) / 3); /* три карточки в ряд */
+  }
+}

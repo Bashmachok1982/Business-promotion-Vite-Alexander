@@ -1,13 +1,14 @@
-<!-- ================= Mobile header (412 × 70) ================= -->
 <header class="header">
   <div class="container">
+    <!-- ЛЕВАЯ ЧАСТЬ -->
     <div class="navigation">
       <nav class="header-nav">
         <a href="./index.html" class="logo">
-          <img src="./img/logo.webp" alt="logo" />Product
+          <img src="./img/logo.webp" alt="logo" />
+          Product
         </a>
 
-        <!-- Селект для планшета -->
+        <!-- SELECT — ТОЛЬКО ПЛАНШЕТ -->
         <select class="nav-select" aria-label="Navigation">
           <option value="./Product.html">Product</option>
           <option value="./Pricing.html">Pricing</option>
@@ -15,52 +16,93 @@
           <option value="./Resources.html">Resources</option>
         </select>
 
-        <!-- Обычный список (будет только на десктопе) -->
+        <!-- DESKTOP NAV -->
         <ul class="header-list">
-          <li class="header-item">
+          <li>
             <a href="./Product.html" class="header-link current">Product</a>
           </li>
-          <li class="header-item">
-            <a href="./Pricing.html" class="header-link">Pricing</a>
-          </li>
-          <li class="header-item">
-            <a href="./Customer.html" class="header-link">Customer</a>
-          </li>
-          <li class="header-item">
-            <a href="./Resources.html" class="header-link">Resources</a>
-          </li>
+          <li><a href="./Pricing.html" class="header-link">Pricing</a></li>
+          <li><a href="./Customer.html" class="header-link">Customer</a></li>
+          <li><a href="./Resources.html" class="header-link">Resources</a></li>
         </ul>
       </nav>
     </div>
 
-    <!-- Кнопки авторизации / приветствие -->
-    <div class="header-auth">
-      <!-- Неавторизован — показываем кнопки -->
-      <ul class="header-list-btn unauth">
-        <li class="header-item-btn">
-          <button type="button" data-modal-open="signin" class="header-btn-in">
-            Sign In
-          </button>
-        </li>
-        <li class="header-item-btn">
-          <button type="button" data-modal-open="signup" class="header-btn-up">
-            Sign Up
-          </button>
-        </li>
-      </ul>
+    <!-- ПРАВАЯ ЧАСТЬ -->
+    <div class="header-right">
+      <div class="header-auth">
+        <!-- неавторизован -->
+        <ul class="header-list-btn unauth">
+          <li>
+            <button
+              type="button"
+              data-modal-open="signin"
+              class="header-btn-in"
+            >
+              Sign In
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              data-modal-open="signup"
+              class="header-btn-up"
+            >
+              Sign Up
+            </button>
+          </li>
+        </ul>
 
-      <!-- Авторизован — показываем приветствие -->
-      <div class="header-user auth" style="display: none">
-        <span class="user-name">Welcome, User</span>
-        <button type="button" class="logout-btn">Logout</button>
+        <!-- авторизован -->
+        <div class="header-user auth" style="display: none">
+          <span class="user-name">Welcome, User</span>
+          <button type="button" class="logout-btn">Logout</button>
+        </div>
       </div>
-    </div>
 
-    <!-- Бургер -->
-    <button type="button" class="menu-toggle" aria-label="Open menu">
-      <svg class="menu-icon" width="32" height="32">
-        <use href="./img/icons.svg#icon-menu"></use>
-      </svg>
-    </button>
+      <button type="button" class="theme-toggle" aria-label="Toggle theme">
+        <!-- Солнце (светлая тема) -->
+        <svg
+          class="theme-icon sun-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22ZM12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4Z"
+            fill="#02897A"
+          />
+          <path
+            d="M19 12C19 8.134 15.865 5 12 5V19C15.865 19 19 15.866 19 12Z"
+            fill="#02897A"
+          />
+        </svg>
+
+        <!-- Луна (тёмная тема) -->
+        <svg
+          class="theme-icon moon-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="display: none"
+        >
+          <path
+            d="M21.64 13A10 10 0 1 1 11 2.36A8 8 0 0 0 21.64 13Z"
+            fill="#02897A"
+          />
+        </svg>
+      </button>
+
+      <!-- 🍔 -->
+      <button type="button" class="menu-toggle" aria-label="Open menu">
+        <svg class="menu-icon" width="32" height="32">
+          <use href="./img/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>

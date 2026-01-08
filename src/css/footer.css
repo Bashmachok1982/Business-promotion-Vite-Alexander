@@ -154,14 +154,14 @@
   border-radius: 4px;
   font-weight: 700;
   text-align: center;
-  width: auto; /* кнопка теперь только по контенту */
+  width: 150px;
   align-self: flex-start; /* чтобы не растягивалась */
   height: 39px;
   padding: 0 16px;
   margin-top: 20px;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease,
     transform 0.3s ease;
-  margin: 0 auto;
+  margin: auto;
 }
 .footer-copyright {
   font-weight: 400;

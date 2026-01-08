@@ -1,16 +1,26 @@
 /**
   |============================
-  | include css partials with
-  | default @import url()
+  | CSS Partials Import Order
   |============================
 */
-/* Common styles */
 
+/* 1. Базовые и ресеты */
 @import url('./base.css');
 @import url('./container.css');
 
-/* Sections style */
+/* 2. Общие компоненты (используются на всех страницах) */
 @import url('./header.css');
+@import url('./footer.css');
+@import url('./mobile-menu.css');
+@import url('./theme.css');
+
+/* 3. Модалки (они часто переопределяют стили) */
+@import url('./modal-sign-in.css');
+@import url('./modal-sign-up.css');
+@import url('./modal-video.css');
+@import url('./modal-contact-expert.css');
+
+/* 4. Секции главной страницы */
 @import url('./hero.css');
 @import url('./feature.css');
 @import url('./management.css');
@@ -21,11 +31,19 @@
 @import url('./pricing.css');
 @import url('./feedback.css');
 @import url('./promo.css');
-@import url('./footer.css');
 
-/*modal*/
-@import url('./mobile-menu.css');
-@import url('./modal-sign-in.css');
-@import url('./modal-sign-up.css');
-@import url('./modal-video.css');
-@import url('./modal-contact-expert.css');
+/* 5. Секции страницы Customer  */
+@import url('./clients.css');
+@import url('./choice.css');
+@import url('./work.css');
+@import url('./joinus.css');
+
+/* 6. Секции страницы Resources */
+@import url('./communications.css');
+@import url('./stories.css');
+@import url('./form.css');
+
+/* 6. Секции страницы Pricing */
+@import url('./enterprise.css');
+@import url('./effects.css');
+@import url('./question.css');

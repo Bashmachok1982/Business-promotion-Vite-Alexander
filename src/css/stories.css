@@ -1,0 +1,145 @@
+.stories {
+  margin: 80px auto;
+  padding: 60px 0;
+}
+
+.stories-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.stories-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* ======================== LIST ======================== */
+.stories-list {
+  display: flex;
+  flex-wrap: wrap; /* 🔧 ВАЖНО: запрещаем налезание */
+  gap: 32px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 64px;
+}
+
+/* ======================== CARD ======================== */
+.stories-list-item {
+  flex: 0 0 348px; /* 🔧 ГЛАВНЫЙ ФИКС: запрещаем сжатие */
+  max-width: 348px;
+  background: #fff;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stories-list-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ======================== IMAGE ======================== */
+.stories-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover; /* 🔒 фикс: не тянется */
+  display: block;
+  background: #f0f0f0;
+}
+
+/* ======================== CONTENT ======================== */
+.stories-list-content {
+  flex-grow: 1;
+  padding: 24px 16px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stories-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #22343d;
+  margin-bottom: 12px;
+}
+
+.stories-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #22343d;
+  text-decoration: none;
+  margin-top: auto;
+  transition: color 0.3s ease;
+}
+
+.stories-link:hover,
+.stories-link:focus {
+  color: #02897a;
+}
+
+/* ======================== BUTTON ======================== */
+.stories-end-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 18px;
+  color: #22343d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.stories-end-link:hover {
+  color: #02897a;
+}
+
+.stories-end-link:hover .stories-end-icon path {
+  fill: #02897a;
+}
+
+/* ======================== MOBILE ======================== */
+@media (max-width: 767px) {
+  .stories-list-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .stories-img {
+    height: 200px;
+  }
+}
+
+/* ======================== TABLET ======================== */
+@media (min-width: 768px) and (max-width: 1149px) {
+  .stories-list-item {
+    flex: 0 0 calc(50% - 16px);
+    max-width: calc(50% - 16px);
+  }
+
+  .stories-img {
+    height: 220px;
+  }
+}
+
+/* ======================== DESKTOP ======================== */
+@media (min-width: 1150px) {
+  .stories-list-item {
+    flex: 0 0 348px; /* 🔒 жёсткая ширина, не сжимается */
+    max-width: 348px;
+  }
+}

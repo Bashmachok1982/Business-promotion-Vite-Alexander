@@ -10,13 +10,7 @@
   // CTA кнопки регистрации
   const featureSignupBtn = document.querySelector('.feature-btn');
   const heroGetStartedBtn = document.querySelector('.hero-btn-getstart');
-  const promoSignupBtn = document.querySelector('.promo-btn'); // если есть такая кнопка
-
-  // Формы и ошибки
-  const signinForm = document.getElementById('signin-form');
-  const signinError = document.getElementById('signin-error');
-  const signupForm = document.getElementById('signup-form');
-  const signupError = document.getElementById('signup-error');
+  const promoSignupBtn = document.querySelector('.promo-btn');
 
   const STORAGE_KEY = 'currentUser';
 
@@ -24,9 +18,15 @@
   // СОСТОЯНИЕ ПОЛЬЗОВАТЕЛЯ
   // =========================
   let currentUser = null;
-  const savedUser = localStorage.getItem(STORAGE_KEY);
-  if (savedUser) {
-    currentUser = JSON.parse(savedUser);
+
+  function loadCurrentUser() {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      currentUser = JSON.parse(saved);
+    } else {
+      currentUser = null;
+    }
+    updateAuthUI();
   }
 
   // =========================
@@ -34,22 +34,19 @@
   // =========================
   function updateAuthUI() {
     if (currentUser) {
-      // Авторизован
       if (unauthBlock) unauthBlock.style.display = 'none';
       if (authBlock) authBlock.style.display = 'flex';
-      if (userNameSpan)
+      if (userNameSpan) {
         userNameSpan.textContent = `Welcome, ${currentUser.name}`;
+      }
 
-      // Скрываем все CTA-кнопки регистрации
       if (featureSignupBtn) featureSignupBtn.style.display = 'none';
       if (heroGetStartedBtn) heroGetStartedBtn.style.display = 'none';
       if (promoSignupBtn) promoSignupBtn.style.display = 'none';
     } else {
-      // Не авторизован
       if (unauthBlock) unauthBlock.style.display = 'flex';
       if (authBlock) authBlock.style.display = 'none';
 
-      // Показываем все CTA-кнопки
       if (featureSignupBtn) featureSignupBtn.style.display = 'block';
       if (heroGetStartedBtn) heroGetStartedBtn.style.display = 'block';
       if (promoSignupBtn) promoSignupBtn.style.display = 'block';
@@ -63,8 +60,8 @@
     const backdrop = document.querySelector(`[data-modal="${modalId}"]`);
     if (backdrop) {
       backdrop.classList.add('is-modal-open');
+      document.body.style.overflow = 'hidden';
 
-      // Специально для видео-модалки — добавляем autoplay только при открытии
       if (modalId === 'video') {
         const iframe = backdrop.querySelector('iframe');
         if (iframe && !iframe.src.includes('autoplay=1')) {
@@ -79,8 +76,8 @@
     const backdrop = document.querySelector(`[data-modal="${modalId}"]`);
     if (backdrop) {
       backdrop.classList.remove('is-modal-open');
+      document.body.style.overflow = '';
 
-      // Специально для видео — убираем autoplay и останавливаем воспроизведение
       if (modalId === 'video') {
         const iframe = backdrop.querySelector('iframe');
         if (iframe) {
@@ -90,102 +87,25 @@
     }
   }
 
-  // Привязка кнопок к открытию модалки регистрации
-  function bindSignupButton(btn) {
-    if (!btn) return;
-    btn.addEventListener('click', () => openModalById('signup'));
-  }
-
-  bindSignupButton(featureSignupBtn);
-  bindSignupButton(heroGetStartedBtn);
-  bindSignupButton(promoSignupBtn);
+  // =========================
+  // УНИВЕРСАЛЬНАЯ ПРИВЯЗКА КНОПОК data-modal-open
+  // =========================
+  document.querySelectorAll('[data-modal-open]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const modalId = btn.getAttribute('data-modal-open');
+      openModalById(modalId);
+    });
+  });
 
   // =========================
-  // ЛОГАУТ
+  // ЛОГАУТ — ДАННЫЕ ОСТАЮТСЯ В LOCALSTORAGE
   // =========================
   if (logoutBtn) {
     logoutBtn.addEventListener('click', () => {
       currentUser = null;
-      updateAuthUI();
+      // НЕ УДАЛЯЕМ localStorage — пользователь остаётся для повторного входа
+      loadCurrentUser();
       alert('Вы успешно вышли');
-    });
-  }
-
-  // =========================
-  // SIGN IN
-  // =========================
-  if (signinForm) {
-    signinForm.addEventListener('submit', e => {
-      e.preventDefault();
-
-      const email = signinForm.email.value.trim();
-      const password = signinForm.password.value;
-
-      signinError.textContent = '';
-      signinError.style.color = '#d93025';
-
-      if (!email || !password) {
-        signinError.textContent = 'Заполните все поля';
-        return;
-      }
-
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (!saved) {
-        signinError.textContent = 'Пользователь не найден';
-        return;
-      }
-
-      const user = JSON.parse(saved);
-
-      if (user.email !== email) {
-        signinError.textContent = 'Пользователь с таким email не найден';
-      } else if (user.password !== password) {
-        signinError.textContent = 'Неправильный пароль';
-      } else {
-        currentUser = user;
-        updateAuthUI();
-
-        signinError.textContent = 'Успешный вход!';
-        signinError.style.color = '#02897a';
-
-        setTimeout(() => closeModalById('signin'), 800);
-      }
-    });
-  }
-
-  // =========================
-  // SIGN UP
-  // =========================
-  if (signupForm) {
-    signupForm.addEventListener('submit', e => {
-      e.preventDefault();
-
-      const name = signupForm.name.value.trim();
-      const email = signupForm.email.value.trim();
-      const password = signupForm.password.value;
-
-      signupError.textContent = '';
-      signupError.style.color = '#d93025';
-
-      if (!name || !email || !password) {
-        signupError.textContent = 'Заполните все поля';
-        return;
-      }
-
-      if (password.length < 6) {
-        signupError.textContent = 'Пароль должен быть не менее 6 символов';
-        return;
-      }
-
-      currentUser = { name, email, password };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(currentUser));
-
-      updateAuthUI();
-
-      signupError.textContent = 'Аккаунт создан!';
-      signupError.style.color = '#02897a';
-
-      setTimeout(() => closeModalById('signup'), 800);
     });
   }
 
@@ -210,5 +130,5 @@
   // =========================
   // ИНИЦИАЛИЗАЦИЯ
   // =========================
-  updateAuthUI();
+  loadCurrentUser();
 })();

@@ -1,4 +1,14 @@
 import './js/mobile-menu.js';
-import './js/modal-inup.js';
 import './js/auth-validation.js';
-import './js/forma-footer.js';
+import './js/auth.js';
+import './js/navigation-active.js';
+import './js/footer-form.js';
+import './js/contact-form.js';
+import './js/theme-toggle.js';
+import './js/questions.js';
+import './js/contact-page-form.js';
+import './js/pricing-order.js';
+import './js/sign-in.js';
+import './js/sign-up.js';
+import './js/nav-select.js';
+import './js/communications-form.js';

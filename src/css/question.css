@@ -1,0 +1,151 @@
+/* ===============================
+   QUESTION — mobile first (0–411)
+   =============================== */
+
+.question {
+  margin: 80px 0;
+}
+
+.question-title {
+  font-weight: 700;
+  font-size: 26px;
+  color: #22343d;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.question-text {
+  font-weight: 400;
+  font-size: 15px;
+  color: #22343d;
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.question-list {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.question-list-item {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 16px 0;
+}
+
+.question-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.question-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.question-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  color: #22343d;
+  margin: 0;
+}
+
+.question-answer {
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #22343d;
+}
+.question-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.question-list-item.active .question-answer {
+  max-height: 500px; /* достаточно большое значение */
+  opacity: 1;
+}
+
+.question-header {
+  cursor: pointer;
+}
+
+/* ===============================
+   ≥ 412px — большие мобильные
+   =============================== */
+
+@media screen and (min-width: 412px) {
+  .question-title {
+    font-size: 28px;
+  }
+
+  .question-text {
+    font-size: 16px;
+    max-width: 380px;
+  }
+
+  .question-subtitle {
+    font-size: 17px;
+  }
+}
+
+/* ===============================
+   ≥ 768px — планшет
+   =============================== */
+
+@media screen and (min-width: 768px) {
+  .question {
+    margin: 120px 0;
+  }
+
+  .question-title {
+    font-size: 32px;
+  }
+
+  .question-text {
+    max-width: 520px;
+  }
+
+  .question-list {
+    max-width: 760px;
+    margin-top: 50px;
+  }
+
+  .question-subtitle {
+    font-size: 18px;
+  }
+
+  .question-answer {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* ===============================
+   ≥ 1150px — десктоп
+   =============================== */
+
+@media screen and (min-width: 1150px) {
+  .question {
+    margin: 150px 0;
+  }
+
+  .question-title {
+    font-size: 34px;
+  }
+
+  .question-list {
+    max-width: 920px;
+  }
+
+  .question-text {
+    max-width: 600px;
+  }
+}

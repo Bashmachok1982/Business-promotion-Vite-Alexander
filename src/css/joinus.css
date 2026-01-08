@@ -1,0 +1,141 @@
+/* ======================== JOINUS SECTION ======================== */
+.joinus {
+  background: #edfffc; /* лёгкий зелёный оттенок, чтобы выделялась на белом фоне */
+  padding: 35px 0;
+  margin: 115px 0 150px;
+}
+
+.joinus-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.3;
+  text-align: center;
+  color: #22343d;
+  max-width: 537px;
+  margin: 0 auto 96px;
+}
+
+/* Контейнер с двумя блоками */
+.joinus-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 256px;
+  flex-wrap: wrap; /* для мобильных */
+}
+
+/* Общий стиль для Business и Enterprise */
+.joinus-business,
+.joinus-enterprise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.joinus-business:hover,
+.joinus-enterprise:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Иконка */
+.joinus-business img,
+.joinus-enterprise img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* Подзаголовок */
+.joinus-subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  color: #22343d;
+  margin: 0 0 20px;
+}
+
+/* Список преимуществ */
+.joinus-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.77778;
+  color: #22343d;
+  margin: 0 0 30px;
+}
+
+/* Дополнительный текст */
+.joinus-subtitle-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #02897a; /* зелёный акцент */
+  margin: 0;
+}
+
+/* ======================== MOBILE (< 768px) ======================== */
+@media (max-width: 767px) {
+  .joinus {
+    margin: 80px 0 100px;
+    padding: 30px 0;
+  }
+
+  .joinus-title {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+
+  .joinus-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .joinus-business,
+  .joinus-enterprise {
+    max-width: 320px;
+    padding: 24px 16px;
+  }
+
+  .joinus-subtitle {
+    font-size: 22px;
+  }
+
+  .joinus-text {
+    font-size: 16px;
+  }
+}
+
+/* ======================== TABLET (768px – 1149px) ======================== */
+@media (min-width: 768px) and (max-width: 1149px) {
+  .joinus-title {
+    font-size: 34px;
+    margin-bottom: 80px;
+  }
+
+  .joinus-content {
+    gap: 100px;
+  }
+
+  .joinus-business,
+  .joinus-enterprise {
+    max-width: 280px;
+  }
+}
+
+/* ======================== DESKTOP (≥ 1150px) ======================== */
+@media (min-width: 1150px) {
+  .joinus-title {
+    font-size: 36px;
+  }
+
+  .joinus-content {
+    gap: 256px;
+  }
+}
