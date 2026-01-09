@@ -1,6 +1,6 @@
 /* ======================== JOINUS SECTION ======================== */
 .joinus {
-  background: #edfffc; /* лёгкий зелёный оттенок, чтобы выделялась на белом фоне */
+  background: #edfffc;
   padding: 35px 0;
   margin: 115px 0 150px;
 }
@@ -15,16 +15,14 @@
   margin: 0 auto 96px;
 }
 
-/* Контейнер с двумя блоками */
 .joinus-content {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 256px;
-  flex-wrap: wrap; /* для мобильных */
+  flex-wrap: wrap;
 }
 
-/* Общий стиль для Business и Enterprise */
 .joinus-business,
 .joinus-enterprise {
   display: flex;
@@ -45,7 +43,6 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
-/* Иконка */
 .joinus-business img,
 .joinus-enterprise img {
   max-width: 100px;
@@ -53,7 +50,6 @@
   margin-bottom: 30px;
 }
 
-/* Подзаголовок */
 .joinus-subtitle {
   font-weight: 600;
   font-size: 24px;
@@ -62,7 +58,6 @@
   margin: 0 0 20px;
 }
 
-/* Список преимуществ */
 .joinus-text {
   font-weight: 400;
   font-size: 18px;
@@ -71,12 +66,11 @@
   margin: 0 0 30px;
 }
 
-/* Дополнительный текст */
 .joinus-subtitle-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.75;
-  color: #02897a; /* зелёный акцент */
+  color: #02897a;
   margin: 0;
 }
 

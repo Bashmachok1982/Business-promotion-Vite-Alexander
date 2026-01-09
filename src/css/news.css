@@ -1,7 +1,7 @@
 /* ======================== NEWS SECTION ======================== */
 .news {
   padding: 60px 0;
-  background: #f8fdfc; /* или твой фон секции */
+  background: #f8fdfc;
 }
 
 .news-title {
@@ -22,7 +22,6 @@
   text-align: center;
 }
 
-/* Общий стиль списка */
 .news-list {
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +32,6 @@
   margin: 0;
 }
 
-/* Карточка */
 .news-list-item {
   background: #fff;
   border-radius: 8px;
@@ -50,14 +48,12 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* Изображение */
 .news-list-item img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Контент под картинкой */
 .news-list-content {
   padding: 24px 16px 32px;
   flex-grow: 1;
@@ -81,7 +77,7 @@
   line-height: 1.5;
   color: #22343d;
   text-decoration: none;
-  margin-top: auto; /* название прижато к низу карточки */
+  margin-top: auto;
   transition: color 0.3s ease;
 }
 
@@ -119,11 +115,10 @@
   }
 
   .news-list-item {
-    width: calc((100% - 30px) / 2); /* 2 карточки в ряд */
+    width: calc((100% - 30px) / 2);
     max-width: 360px;
   }
 
-  /* Третья карточка по центру под двумя верхними */
   .news-list-item:nth-child(3) {
     width: calc((100% - 30px) / 2);
     margin-left: auto;
@@ -150,7 +145,7 @@
   }
 
   .news-list-item {
-    width: calc((100% - 60px) / 3); /* 3 карточки в ряд, 2 промежутка по 30px */
+    width: calc((100% - 60px) / 3);
   }
 
   .news-link {

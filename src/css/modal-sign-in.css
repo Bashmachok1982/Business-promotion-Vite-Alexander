@@ -68,12 +68,11 @@
   min-height: 24px;
   margin: 12px 0;
   font-size: 14px;
-  color: #d93025; /* красный как в Google */
+  color: #d93025;
   text-align: center;
   font-weight: 500;
 }
 
-/* Опционально: красная обводка на ошибочных полях */
 .modal-form input:invalid:focus {
   border-color: #d93025;
   box-shadow: 0 0 0 2px rgba(217, 48, 37, 0.2);
@@ -107,14 +106,14 @@
   color: #fff;
 }
 .password-label {
-  position: relative; /* важно для абсолютного позиционирования глазка */
+  position: relative;
   display: block;
-  margin-bottom: 12px; /* отступ между полями */
+  margin-bottom: 12px;
 }
 
 .password-input {
   width: 100%;
-  padding: 12px 44px 12px 12px; /* справа больше места под глазик */
+  padding: 12px 44px 12px 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
@@ -125,7 +124,7 @@
 .toggle-password {
   position: absolute;
   top: 50%;
-  right: 12px; /* отступ от правого края */
+  right: 12px;
   transform: translateY(-50%);
   background: none;
   border: none;
@@ -140,7 +139,6 @@
   color: #02897a;
 }
 
-/* Фокус на инпуте — лёгкая подсветка */
 .password-input:focus {
   outline: none;
   border-color: #02897a;

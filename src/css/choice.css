@@ -1,7 +1,7 @@
 /* ======================== CHOICE SECTION ======================== */
 .choice {
   padding: 100px 0;
-  background: #edfffc; /* лёгкий зелёный оттенок, чтобы выделялась на белом фоне */
+  background: #edfffc;
 }
 
 .choice-title {
@@ -12,7 +12,6 @@
   margin-bottom: 50px;
 }
 
-/* Общий стиль списка */
 .choice-list {
   display: flex;
   flex-wrap: wrap;
@@ -23,9 +22,8 @@
   margin: 0;
 }
 
-/* Карточка */
 .choice-list-item {
-  flex: 1 1 300px; /* гибкая ширина, минимум 300px */
+  flex: 1 1 300px;
   max-width: 360px;
   background: #fff;
   border: 1px solid #dedede;
@@ -44,7 +42,6 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
-/* Иконка */
 .choice-icon-wrap {
   width: 50px;
   height: 50px;
@@ -73,7 +70,6 @@
   background: #f03e3d;
 }
 
-/* Текст */
 .choice-subtitle {
   font-weight: 700;
   font-size: 24px;
@@ -130,10 +126,9 @@
   }
 
   .choice-list-item {
-    flex: 0 0 calc(50% - 20px); /* две карточки в ряд */
+    flex: 0 0 calc(50% - 20px);
   }
 
-  /* Третья карточка по центру ниже */
   .choice-list-item:nth-child(3) {
     flex: 0 0 calc(50% - 20px);
     margin: 0 auto;
@@ -152,6 +147,6 @@
   }
 
   .choice-list-item {
-    flex: 0 0 calc((100% - 60px) / 3); /* три карточки в ряд */
+    flex: 0 0 calc((100% - 60px) / 3);
   }
 }

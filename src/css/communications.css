@@ -1,3 +1,4 @@
+/* ======================== COMMUNICATIONS SECTION ======================== */
 .communications {
   margin-top: 80px;
 }
@@ -8,7 +9,6 @@
   gap: 40px;
 }
 
-/* ===== TEXT BLOCK ===== */
 .communications-text-block {
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   font-size: 40px;
   font-weight: 600;
   color: #22343d;
-  line-height: 1.3; /* 🔥 ВАЖНО */
+  line-height: 1.3;
 }
 
 .communications-text {
@@ -29,14 +29,12 @@
   color: #22343d;
 }
 
-/* ===== ACTIONS ===== */
 .communications-actions {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-/* input */
 .input-btn {
   display: flex;
   align-items: center;
@@ -62,7 +60,6 @@
   font-weight: 600;
 }
 
-/* group */
 .communications-group {
   display: flex;
   align-items: center;
@@ -73,13 +70,12 @@
   color: #02897a;
 }
 
-/* image */
 .communications-img {
   max-width: 100%;
   display: block;
 }
 
-/* ================= MOBILE ================= */
+/* ======================== MOBILE (< 768px) ======================== */
 @media (max-width: 767px) {
   .communications-content {
     flex-direction: column;
@@ -96,7 +92,7 @@
   }
 }
 
-/* ================= TABLET ================= */
+/* ======================== TABLET (768px – 1149px) ======================== */
 @media (min-width: 768px) and (max-width: 1149px) {
   .communications-content {
     flex-direction: column;
@@ -119,7 +115,7 @@
   }
 }
 
-/* ================= DESKTOP ================= */
+/* ======================== DESKTOP (≥ 1150px) ======================== */
 @media (min-width: 1150px) {
   .communications-content {
     flex-direction: row-reverse;

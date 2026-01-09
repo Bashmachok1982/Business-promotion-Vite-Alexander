@@ -1,23 +1,18 @@
-/* Styles for Mobile devices */
+/* ======================== MOBILE (< 768px) ======================== */
 .container {
-  /*min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;*/
   padding: 0 30px;
 }
-/* Styles for Tablet devices */
+/* ======================== TABLET (768px – 1149px) ======================== */
 @media only screen and (min-width: 768px) {
   .container {
-    /*max-width: 768px;*/
-    max-width: 1150px; /* ограничение, чтобы не разъезжалось слишком сильно */
+    max-width: 1150px;
     margin: 0 auto;
     padding: 0 16px;
   }
 }
-/* Styles for Desktop devices */
+/* ======================== DESKTOP (≥ 1150px) ======================== */
 @media only screen and (min-width: 1150px) {
   .container {
-    /*max-width: 1200px;*/
     max-width: 1150px;
     padding: 0 20px;
     margin: 0 auto;

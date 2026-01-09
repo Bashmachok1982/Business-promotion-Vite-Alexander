@@ -1,4 +1,4 @@
-/*======================================== MANAGEMENT================================================*/
+/* ======================== MANAGEMENT SECTION ======================== */
 .management {
   background: #f8fdfc;
 }
@@ -56,9 +56,9 @@
   display: block;
   height: auto;
   max-width: 100%;
-  width: 350px; /* по умолчанию для мобилки */
+  width: 350px;
 }
-/*============================================MANAGEMENT TABLET===================================*/
+/* ======================== TABLET (768px – 1149px) ======================== */
 @media (min-width: 768px) and (max-width: 1149px) {
   .management .container {
     display: flex;
@@ -67,20 +67,18 @@
     text-align: center;
   }
 
-  /* Картинка первой и на всю ширину */
   .management-image {
     margin-bottom: 24px;
   }
 
   .management-image img {
     width: 100%;
-    max-width: 610px; /* ✅ ограничение, подбираешь под макет */
+    max-width: 610px;
     height: auto;
     display: block;
     margin: 0 auto;
   }
 
-  /* Контент ниже */
   .management-content {
     order: 2;
     display: flex;
@@ -93,7 +91,7 @@
     max-width: 700px;
   }
 }
-/*============================================MANAGEMENT DESKTOP====================================*/
+/* ======================== DESKTOP (≥ 1150px) ======================== */
 @media (min-width: 1150px) {
   .management {
     padding: 20px 0;
@@ -107,7 +105,7 @@
     align-items: center;
   }
   .management-content {
-    flex: 1; /* занимает доступное место слева */
+    flex: 1;
     max-width: 486px;
   }
   .management-title {

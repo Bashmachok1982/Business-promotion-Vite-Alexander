@@ -5,13 +5,13 @@
 
 .collaboration .container {
   display: flex;
-  align-items: center; /* выравниваем по вертикали */
-  justify-content: space-between; /* отталкиваем контент и картинку */
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 150px;
   flex-direction: column-reverse;
 }
 .collaboration-content {
-  flex: 1; /* занимает доступное место слева */
+  flex: 1;
   max-width: 350px;
 }
 .collaboration-subtitle {
@@ -90,12 +90,12 @@
   }
   .collaboration .container {
     display: flex;
-    align-items: center; /* выравниваем по вертикали */
-    justify-content: space-between; /* отталкиваем контент и картинку */
+    align-items: center;
+    justify-content: space-between;
     flex-direction: row;
   }
   .collaboration-content {
-    flex: 1; /* занимает доступное место слева */
+    flex: 1;
     max-width: 486px;
   }
   .collaboration-subtitle {
@@ -136,7 +136,7 @@
     display: block;
     display: flex;
     justify-content: flex-end;
-    margin-left: 84px; /* отступ слева от контента */
+    margin-left: 84px;
   }
 
   .collaboration-image img {

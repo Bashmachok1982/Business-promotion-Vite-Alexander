@@ -1,4 +1,4 @@
-/*======================================== SUPPORT================================================*/
+/* ======================== SUPPORT SECTION ======================== */
 .support {
   padding: 20px 0;
   background: #f8fdfc;
@@ -62,7 +62,7 @@
 }
 .support-list-item {
   display: flex;
-  align-items: flex-start; /* иконка сверху с текстом */
+  align-items: flex-start;
   gap: 30px;
 }
 .icon-box {
@@ -74,15 +74,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 35px; /* фиксированный размер */
-  /* по умолчанию фон — чтобы не был прозрачным */
+  flex: 0 0 35px;
   background: #f90;
 }
 .support-icons {
   width: 12px;
   height: 12px;
   display: block;
-  fill: #fff; /* если иконка построена через path и наследует fill */
+  fill: #fff;
   stroke: none;
 }
 .support-list-item:nth-child(1) .icon-box {
@@ -94,7 +93,7 @@
 .support-list-item:nth-child(3) .icon-box {
   background: #4d8dff;
 }
-/*============================================SUPPORT TABLET===================================*/
+/* ======================== TABLET (768px – 1149px) ======================== */
 @media (min-width: 768px) and (max-width: 1149px) {
   .support-image img {
     height: auto;
@@ -112,15 +111,15 @@
     max-width: 100%;
   }
 }
-/*============================================SUPPORT DESKTOP====================================*/
+/* ======================== DESKTOP (≥ 1150px) ======================== */
 @media (min-width: 1150px) {
   .support {
     padding: 20px 0;
   }
   .support .container {
     display: flex;
-    align-items: center; /* выравниваем по вертикали */
-    justify-content: space-between; /* отталкиваем контент и картинку */
+    align-items: center;
+    justify-content: space-between;
   }
   .support-content {
     max-width: 450px;
@@ -158,13 +157,13 @@
   }
   .support-list-item {
     display: flex;
-    align-items: flex-start; /* иконка сверху с текстом */
+    align-items: flex-start;
     gap: 30px;
   }
   .support-list-item .support-text {
-    margin: 0; /* убираем лишние отступы абзаца */
+    margin: 0;
   }
-  /* контейнер квадратика */
+
   .icon-box {
     box-sizing: border-box;
     width: 35px;
@@ -174,19 +173,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 35px; /* фиксированный размер */
-    /* по умолчанию фон — чтобы не был прозрачным */
+    flex: 0 0 35px;
     background: #f90;
   }
-  /* svg внутри — белая галочка */
+
   .icon-box .support-icons {
     width: 12px;
     height: 12px;
     display: block;
-    fill: #fff; /* если иконка построена через path и наследует fill */
+    fill: #fff;
     stroke: none;
   }
-  /* индивидуальные цвета для каждого пункта (1-й, 2-й, 3-й) */
+
   .support-list-item:nth-child(1) .icon-box {
     background: #f90;
   }
@@ -203,7 +201,7 @@
     display: block;
     display: flex;
     justify-content: flex-start;
-    margin-right: 84px; /* отступ слева от контента */
+    margin-right: 84px;
   }
 
   .support-image img {

@@ -6,7 +6,7 @@ if (footerSubmitBtn && footerPhoneInput) {
   footerSubmitBtn.addEventListener('click', () => {
     const phone = footerPhoneInput.value.trim();
 
-    // Простая валидация: не пусто и хотя бы 9 символов (можно улучшить regex)
+    // Простая валидация: не пусто и хотя бы 9 символов
     if (!phone) {
       alert('Пожалуйста, введите номер телефона');
       return;

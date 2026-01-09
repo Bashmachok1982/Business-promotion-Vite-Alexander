@@ -1,7 +1,7 @@
 /* ======================== CLIENTS SECTION ======================== */
 .clients {
   padding: 60px 0;
-  background: #f8fdfc; /* или фон твоей секции */
+  background: #f8fdfc;
 }
 
 .clients-title {
@@ -12,7 +12,6 @@
   margin: 100px auto 50px;
 }
 
-/* Общий стиль списка */
 .clients-list {
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +24,7 @@
 }
 
 .clients-list-item {
-  flex: 0 0 auto; /* не растягиваем элементы */
+  flex: 0 0 auto;
 }
 
 .clients-icons {
@@ -54,7 +53,7 @@
   }
 
   .clients-icons {
-    max-width: 150px; /* ограничиваем размер на мобильных */
+    max-width: 150px;
   }
 }
 
@@ -68,15 +67,15 @@
   .clients-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* центрирует элементы по горизонтали */
+    justify-content: center;
     align-items: center;
-    gap: 80px; /* увеличил gap для визуального равновесия */
-    max-width: 700px; /* ограничиваем ширину списка, чтобы карточки не растягивались до краёв */
-    margin: 0 auto 120px; /* центрируем весь блок по горизонтали */
+    gap: 80px;
+    max-width: 700px;
+    margin: 0 auto 120px;
   }
 
   .clients-list-item {
-    flex: 0 0 auto; /* не растягиваем карточки */
+    flex: 0 0 auto;
   }
 
   .clients-icons {
@@ -101,6 +100,6 @@
   }
 
   .clients-icons {
-    max-width: 200px; /* или оставь 100% — как в макете */
+    max-width: 200px;
   }
 }

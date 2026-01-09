@@ -1,5 +1,5 @@
-/*===========================FOOTER=========================*/
-/* ================= МОБИЛЬНАЯ ВЕРСИЯ ================= */
+/* ======================== FOOTER SECTION ======================== */
+/* ======================== MOBILE (< 768px) ======================== */
 .footer {
   background: #f8fdfc;
 }
@@ -34,25 +34,25 @@
 }
 .footer-social-link {
   display: flex;
-  align-items: center; /*SVG-иконка внутри кружка*/
-  justify-content: center; /* SVG-иконка внутри кружка*/
-  width: 40px; /*ширина кружка иконки*/
-  height: 40px; /*высота кружка иконки*/
-  border-radius: 50%; /*закругление*/
-  background-color: #edfffc; /* Салатовый фон для круга */
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #edfffc;
   transition-property: transform, background-color;
   transition-duration: 300ms;
   transition-timing-function: ease;
 }
 .footer-icons {
-  width: 24px; /*ширина самой соц иконки*/
-  height: 24px; /*высота самой соц иконки*/
-  fill: #02897a; /* Тёмный цвет для контраста с фоном */
+  width: 24px;
+  height: 24px;
+  fill: #02897a;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-resource-item {
   display: flex;
-  flex-direction: column; /*размещаем элементы в столбик*/
+  flex-direction: column;
   align-items: center;
   margin-bottom: 32px;
 }
@@ -61,7 +61,7 @@
   font-size: 20px;
   line-height: 1.5;
   color: #22343d;
-  margin: 0 0 8px 0; /*расстояние от заголовка до ссылок вниз*/
+  margin: 0 0 8px 0;
 }
 .footer-resource-link {
   font-size: 16px;
@@ -117,30 +117,30 @@
 .footer-input-wrapper {
   display: flex;
   align-items: center;
-  border: 1px solid #bcd0e5; /* Граница для "единого" вида */
+  border: 1px solid #bcd0e5;
   border-radius: 4px;
   background-color: #fff;
-  overflow: hidden; /* чтобы ничего не вылезало */
+  overflow: hidden;
   margin-top: 32px;
   margin-bottom: 24px;
 }
 .footer-input-icons {
   width: 18px;
   height: 28px;
-  margin-left: 10px; /* Отступ иконки от края */
-  fill: #02897a; /* Зелёный цвет иконки */
-  flex-shrink: 0; /* запрет сжиматься */
+  margin-left: 10px;
+  fill: #02897a;
+  flex-shrink: 0;
 }
 .footer-input {
-  border: none; /* Убираем границу input */
-  outline: none; /* Убираем outline при фокусе */
-  padding: 10px 12px; /* убираем лишние отступы */
+  border: none;
+  outline: none;
+  padding: 10px 12px;
   font-size: 16px;
-  width: 250px; /* фиксированная ширина */
-  max-width: 100%; /* но всё же не выйдет за границы родителя */
-  flex: 0 1 auto; /* разрешаем сжиматься в флексе */
-  background: transparent; /* Прозрачный фон */
-  flex: 1; /* занимает всё оставшееся место */
+  width: 250px;
+  max-width: 100%;
+  flex: 0 1 auto;
+  background: transparent;
+  flex: 1;
 }
 .footer-input::placeholder {
   color: #22343d;
@@ -155,7 +155,7 @@
   font-weight: 700;
   text-align: center;
   width: 150px;
-  align-self: flex-start; /* чтобы не растягивалась */
+  align-self: flex-start;
   height: 39px;
   padding: 0 16px;
   margin-top: 20px;
@@ -172,28 +172,24 @@
   text-align: center;
 }
 
-/* ================= ПЛАНШЕТНАЯ ВЕРСИЯ ================= */
+/* ======================== TABLET (768px – 1149px) ======================== */
 @media (min-width: 768px) and (max-width: 1149px) {
-  /* делаем общий контейнер гибким и разрешаем перенос */
   .footer-content {
     display: flex;
     flex-wrap: wrap;
-    /*gap: 32px; /* расстояние между элементами */
-    align-items: flex-start; /* выравниваем по верху */
+    align-items: flex-start;
     justify-content: space-between;
   }
 
-  /* Верхний левый блок: логотип + соцсети */
   .footer-logo-social {
     order: 1;
-    flex: 0 1 48%; /* занимает ~половину строки, но может сжаться */
-    min-width: 260px; /* порог, ниже которого пойдёт перенос в колонку */
+    flex: 0 1 48%;
+    min-width: 260px;
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
 
-  /* Верхний правый блок: заголовок + инпут + кнопка */
   .footer-energy-deal {
     order: 2;
     flex: 0 1 48%;
@@ -203,7 +199,6 @@
     text-align: left;
   }
 
-  /* Нижние две колонки со ссылками */
   .footer-resource-item {
     order: 3;
     flex: 0 1 48%;
@@ -220,47 +215,47 @@
     justify-content: center;
     margin-top: 32px;
   }
-  /* инпут + кнопка в ряд */
+
   .footer-input-wrapper {
     display: flex;
     gap: 8px;
-    max-width: 100%; /* пусть подстраивается */
-    flex-wrap: wrap; /* разрешаем перенос */
+    max-width: 100%;
+    flex-wrap: wrap;
   }
 
   .footer-input-wrapper input {
-    flex: 1 1 200px; /* будет сжиматься, но не меньше 200px */
-    min-width: 0; /* убираем ограничение, чтобы не ломал flex */
+    flex: 1 1 200px;
+    min-width: 0;
     width: auto;
   }
 
   .footer-btn {
-    flex: 0 0 auto; /* кнопка сохраняет свой размер */
+    flex: 0 0 auto;
   }
-  /* уточнения — чтобы элементы внутри выглядели аккуратно */
+
   .footer-list-icons {
     margin-top: 8px;
-  } /* чуть ближе к логотипу */
+  }
   .footer-deal-text {
     margin-bottom: 12px;
-  } /* расстояние до инпута */
-  /* растянуть инпут */
+  }
+
   .footer-btn {
     margin-top: 12px;
-  } /* кнопка под инпутом */
+  }
 }
 
-/* ================= ДЕСКТОПНАЯ ВЕРСИЯ ================= */
+/* ======================== DESKTOP (≥ 1150px) ======================== */
 @media (min-width: 1150px) {
   .footer .container {
-    max-width: 1150px; /* ограничение */
-    margin: 0 auto; /* по центру */
-    padding: 0 20px; /* боковые отступы */
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   .footer-content {
     display: flex;
-    justify-content: space-between; /*распределяет по главной оси веь контент*/
-    margin-bottom: 10px; /*отступ вниз до следующего элемента*/
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
   .footer-resource-link:hover,
   .footer-resource-link:focus,
@@ -272,7 +267,7 @@
   .form-social-link:hover,
   .form-social-link:focus {
     transform: scale(1.1);
-    background-color: #d5f5f2; /* Чуть темнее при наведении */
+    background-color: #d5f5f2;
   }
   .footer-legal-link:hover,
   .footer-legal-link:focus,

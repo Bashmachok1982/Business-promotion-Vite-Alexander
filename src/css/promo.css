@@ -1,7 +1,4 @@
-/* =========================
-   1. ОБЩИЕ СТИЛИ (BASE)
-   mobile-first
-========================= */
+/* ======================== PROMO SECTION ======================== */
 
 .promo {
   background: #f8fdfc;
@@ -51,9 +48,7 @@ body.pricing .promo-btn {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* =========================
-   2. MOBILE ≤767px (412)
-========================= */
+/* ======================== MOBILE (< 768px) ======================== */
 
 @media screen and (max-width: 767px) {
   .promo-content {
@@ -86,9 +81,7 @@ body.pricing .promo-btn {
   }
 }
 
-/* =========================
-   3. TABLET ≥768px
-========================= */
+/* ======================== TABLET (768px – 1149px) ======================== */
 
 @media screen and (min-width: 768px) {
   .promo-content {
@@ -122,9 +115,7 @@ body.pricing .promo-btn {
   }
 }
 
-/* =========================
-   4. DESKTOP ≥1150px
-========================= */
+/* ======================== DESKTOP (≥ 1150px) ======================== */
 
 @media screen and (min-width: 1150px) {
   .promo-content {

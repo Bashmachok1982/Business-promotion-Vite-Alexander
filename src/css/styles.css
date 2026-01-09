@@ -14,7 +14,7 @@
 @import url('./mobile-menu.css');
 @import url('./theme.css');
 
-/* 3. Модалки (они часто переопределяют стили) */
+/* 3. Модалки  */
 @import url('./modal-sign-in.css');
 @import url('./modal-sign-up.css');
 @import url('./modal-video.css');
@@ -43,7 +43,7 @@
 @import url('./stories.css');
 @import url('./form.css');
 
-/* 6. Секции страницы Pricing */
+/* 6. Секции страницы Pricings */
 @import url('./enterprise.css');
 @import url('./effects.css');
 @import url('./question.css');

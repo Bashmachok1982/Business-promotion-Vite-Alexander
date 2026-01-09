@@ -1,5 +1,5 @@
-/*===============================FEATURE=========================*/
-/*пробно для темной темы*/
+/* ======================== FEATURE SECTION ======================== */
+
 .feature {
   padding: 18px 0;
   background: #f8fdfc;
@@ -40,20 +40,20 @@
 }
 .feature-icon-wrap i {
   font-size: 20px;
-  color: #fff; /* сама иконка белая */
+  color: #fff;
 }
 .feature-icon-wrap.green {
   background: #02897a;
-} /* стрелка */
+}
 .feature-icon-wrap.blue {
   background: #4d8dff;
-} /* цепь */
+}
 .feature-icon-wrap.purple {
   background: #740a76;
-} /* сердце */
+}
 .feature-icon-wrap.red {
   background: #f03e3d;
-} /* часы */
+}
 .feature-subtitle {
   font-weight: 600;
   font-size: 22px;
@@ -86,7 +86,7 @@
   text-align: center;
   transition: opacity 0.3s ease;
 }
-/*============================================FEATURE TABLET===================================*/
+/* ======================== TABLET (768px – 1149px) ======================== */
 @media (min-width: 768px) and (max-width: 1149px) {
   .feature-list {
     display: flex;
@@ -97,9 +97,9 @@
   }
   .feature-list-item {
     width: calc((100% - 50px) / 2);
-    align-items: center; /* центрируем */
+    align-items: center;
     text-align: center;
-    min-height: 212px; /* фиксируем минимальную высоту */
+    min-height: 212px;
     justify-content: flex-start;
   }
   .feature-title {
@@ -107,7 +107,7 @@
   }
 }
 
-/*============================================FEATURE DESKTOP====================================*/
+/* ======================== DESKTOP (≥ 1150px) ======================== */
 @media (min-width: 1150px) {
   .feature {
     padding: 24px 0;
@@ -130,9 +130,9 @@
     width: calc((100% - 50px) / 2);
     display: flex;
     flex-direction: column;
-    align-items: center; /* центрируем */
+    align-items: center;
     text-align: center;
-    min-height: 212px; /* фиксируем минимальную высоту */
+    min-height: 212px;
     justify-content: flex-start;
   }
   .feature-text {

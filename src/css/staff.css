@@ -1,4 +1,4 @@
-/*======================================== STAFF ================================================*/
+/* ======================== STAFF SECTION ======================== */
 .staff {
   padding: 20px 0;
   margin: 120px 0;
@@ -27,55 +27,52 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  align-items: stretch; /* элементы будут тянуться по ширине контейнера */
+  align-items: stretch;
   margin-top: 40px;
 }
 .staff-list-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 100%; /* чтобы элемент занимал всю ширину */
+  width: 100%;
 }
 .staff-list-text {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
   color: #2f281e;
-  width: 190px; /* Фиксированная ширина */
-  height: 50px; /* Фиксированная высота */
-  background: #fff; /* Фон белый */
-  box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15); /* Тень, как в SVG */
-  border-radius: 50px; /* Закругление углов, адаптировано под макет */
-  display: flex; /* Для центрирования текста внутри */
-  align-items: center; /* Вертикальное центрирование текста */
-  justify-content: center; /* Горизонтальное центрирование текста */
+  width: 190px;
+  height: 50px;
+  background: #fff;
+  box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* 1-й и 3-й элементы — прижимаем к левому краю */
+
 .staff-list-item.first-item,
 .staff-list-item.third-item {
-  justify-content: flex-end; /* ВАЖНО: flex-end, потому что row-reverse */
+  justify-content: flex-end;
   margin-left: 0;
 }
 
-/* 2-й и 4-й элементы — прижимаем к правому краю */
 .staff-list-item.second-item,
 .staff-list-item.fourth-item {
   justify-content: flex-end;
   margin-right: 0;
 }
 
-/* Направление для каждой пары */
 .first-item,
 .third-item {
-  flex-direction: row-reverse; /* картинка справа */
+  flex-direction: row-reverse;
 }
 
 .second-item,
 .fourth-item {
-  flex-direction: row; /* картинка слева */
+  flex-direction: row;
 }
 
-/* Чтобы текст не сжимался и сохранял форму */
 .staff-list-text {
   width: 190px;
   min-width: 190px;
@@ -97,13 +94,13 @@
   text-align: center;
 }
 .staff-img {
-  flex-shrink: 0; /* чтобы картинка не сжималась */
+  flex-shrink: 0;
 }
-/*============================================STAFF TABLET===================================*/
+/* ======================== TABLET (768px – 1149px) ======================== */
 @media (min-width: 768px) and (max-width: 1149px) {
 }
 
-/*============================================STAFF DESKTOP====================================*/
+/* ======================== DESKTOP (≥ 1150px) ======================== */
 @media (min-width: 1150px) {
   .staff {
     padding: 20px 0;
@@ -128,9 +125,9 @@
   .staff-list {
     display: flex;
     margin-top: 40px;
-    flex-wrap: wrap; /* Разрешаем перенос на новые строки */
-    gap: 30px; /* Уменьшаем gap для лучшего размещения */
-    justify-content: space-between; /* Равномерное распределение в ряду */
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
   }
   .staff-list-item {
     display: flex;
@@ -142,22 +139,21 @@
     font-size: 16px;
     text-align: center;
     color: #2f281e;
-    width: 281px; /* Фиксированная ширина */
-    height: 50px; /* Фиксированная высота */
-    background: #fff; /* Фон белый */
-    box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15); /* Тень, как в SVG */
-    border-radius: 50px; /* Закругление углов, адаптировано под макет */
-    display: flex; /* Для центрирования текста внутри */
-    align-items: center; /* Вертикальное центрирование текста */
-    justify-content: center; /* Горизонтальное центрирование текста */
+    width: 281px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  /* 1 и 4: картинка слева, текст справа */
+
   .first-item,
   .fourth-item {
     flex-direction: row-reverse;
   }
 
-  /* 2 и 3: текст слева, картинка справа */
   .second-item,
   .third-item {
     flex-direction: row;
@@ -167,7 +163,7 @@
     display: flex;
     justify-content: flex-end;
   }
-  /* Убираем margin-right для .second-item,.third-item, чтобы не было двойного отступа */
+
   .second-item,
   .third-item .staff-list-text {
     margin-right: 0;

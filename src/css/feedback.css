@@ -1,3 +1,4 @@
+/* ======================== FEEDBACK SECTION ======================== */
 .feedback {
   background: #f8fdfc;
 }
@@ -38,7 +39,6 @@
   align-items: flex-start;
 }
 
-/* ⭐ ЗВЁЗДЫ — ТВОИ, БЕЗ ИЗМЕНЕНИЙ */
 .star {
   width: 19px;
   height: 18px;
@@ -99,6 +99,7 @@
   letter-spacing: 0.01em;
   color: #252b42;
 }
+/* ======================== MOBILE (< 768px) ======================== */
 @media screen and (max-width: 767px) {
   .feedback-list {
     flex-direction: column;
@@ -111,6 +112,7 @@
     max-width: 327px;
   }
 }
+/* ======================== TABLET (768px – 1149px) ======================== */
 @media screen and (min-width: 768px) {
   .feedback-title {
     font-size: 32px;
@@ -126,6 +128,7 @@
     width: 327px;
   }
 }
+/* ======================== DESKTOP (≥ 1150px) ======================== */
 @media screen and (min-width: 1150px) {
   .feedback-list {
     display: flex;
@@ -136,8 +139,8 @@
   .feedback-list-item {
     width: calc((100% - 2 * 64px) / 3);
     height: 240px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* базовая тень */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ← вот это главное */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .feedback-list-item:hover,
   .feedback-list-item:focus {

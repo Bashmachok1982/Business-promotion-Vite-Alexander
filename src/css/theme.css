@@ -1,10 +1,9 @@
-/* ======================== ТЁМНАЯ ТЕМА ======================== */
+/* ======================== DARK THEME ======================== */
 html.dark {
   background-color: #121212;
   color: #e0e0e0;
 }
 
-/* Хедер в тёмной теме */
 html.dark .header {
   background: #1e1e1e;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
@@ -40,7 +39,6 @@ html.dark .logout-btn {
   color: #e0e0e0;
 }
 
-/* Фон секций (если нужно) */
 html.dark .hero,
 html.dark .feature,
 html.dark .choice,
@@ -60,7 +58,6 @@ html.dark .form {
   background: #1a1a1a;
 }
 
-/* Текст в секциях */
 html.dark .hero-title,
 html.dark .hero-subtitle,
 html.dark .hero-text,
@@ -130,21 +127,19 @@ html.dark .form-subtitle {
   color: #e0e0e0;
 }
 
-/* Карточки */
 html.dark .choice-list-item,
 html.dark .work-list-item {
   background: #2a2a2a;
   border-color: #444;
 }
-/* ======================== ТЁМНАЯ ТЕМА — МОБИЛЬНОЕ МЕНЮ И МОДАЛКИ ======================== */
+/* ======================== MOBILE (< 768px) ======================== */
 
-/* Мобильное меню — полностью тёмное */
 html.dark .mobile-menu {
   background: #1e1e1e;
 }
 
 html.dark .modal-menu {
-  background: #1e1e1e; /* ← главное: окрашиваем внутренний контейнер */
+  background: #1e1e1e;
   color: #e0e0e0;
 }
 
@@ -170,7 +165,6 @@ html.dark .mobile-social-link:hover .mobile-social-icon {
   fill: #02897a;
 }
 
-/* Кнопки в мобильном меню */
 html.dark .mobile-header-btn-in,
 html.dark .mobile-header-btn-up {
   color: #e0e0e0;
@@ -204,7 +198,6 @@ html.dark .menu-close-icon {
   fill: #1e1e1e;
 }
 
-/* Модалки */
 html.dark .backdrop {
   background: rgba(0, 0, 0, 0.8);
 }
@@ -216,7 +209,6 @@ html.dark .modal {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
 }
 
-/* Заголовки и текст в модалках */
 html.dark .modal-title {
   color: #e0e0e0;
 }
@@ -225,7 +217,6 @@ html.dark .modal-text {
   color: #e0e0e0;
 }
 
-/* Поля ввода в модалках */
 html.dark .modal-form input,
 html.dark .modal-form textarea {
   background: #2a2a2a;
@@ -238,7 +229,6 @@ html.dark .modal-form textarea::placeholder {
   color: #888;
 }
 
-/* Кнопки в модалках */
 html.dark .modal-submit {
   background: #02897a;
   color: #fff;
@@ -248,7 +238,6 @@ html.dark .modal-submit:hover {
   background: #02a087;
 }
 
-/* Сообщения об ошибке/успехе */
 html.dark .error-message,
 html.dark .message {
   color: #e0e0e0;
@@ -262,7 +251,6 @@ html.dark .message.success {
   color: #51cf66;
 }
 
-/* Кнопка закрытия модалки */
 html.dark .modal-close {
   color: #e0e0e0;
   background: rgba(255, 255, 255, 0.1);
@@ -272,7 +260,6 @@ html.dark .modal-close:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Соцсети в мобильном меню */
 html.dark .mobile-social-icon {
   fill: #e0e0e0;
 }
@@ -280,38 +267,35 @@ html.dark .mobile-social-icon {
 html.dark .mobile-social-link:hover .mobile-social-icon {
   fill: #02897a;
 }
-/* ===== COMMUNICATIONS INPUT — DARK MODE ===== */
+
 html.dark .input-btn {
-  background: #2a2a2a; /* общий фон */
+  background: #2a2a2a;
   border-color: #444;
 }
 
 html.dark .communications-input {
-  background: transparent; /* чтобы не было белого */
+  background: transparent;
   color: #ffffff;
 }
 
-/* placeholder */
 html.dark .communications-input::placeholder {
   color: #e0e0e0;
-  opacity: 1; /* важно для Firefox */
+  opacity: 1;
 }
 
-/* автозаполнение Chrome */
 html.dark .communications-input:-webkit-autofill {
   -webkit-text-fill-color: #fff;
   -webkit-box-shadow: 0 0 0 1000px #2a2a2a inset;
 }
 html.dark .footer-input {
-  background: #2a2a2a; /* общий фон */
+  background: #2a2a2a;
   border-color: #444;
 }
-/* placeholder */
+
 html.dark .footer-input::placeholder {
   color: #e0e0e0;
-  opacity: 1; /* важно для Firefox */
+  opacity: 1;
 }
-/* ================= CONTACT PAGE FORM — DARK THEME ================= */
 
 html.dark .form-input,
 html.dark .form-textarea {
@@ -320,13 +304,11 @@ html.dark .form-textarea {
   color: #e0e0e0;
 }
 
-/* placeholder */
 html.dark .form-input::placeholder,
 html.dark .form-textarea::placeholder {
   color: #bdbdbd;
 }
 
-/* focus */
 html.dark .form-input:focus,
 html.dark .form-textarea:focus {
   border-color: #02897a;
@@ -334,12 +316,10 @@ html.dark .form-textarea:focus {
   box-shadow: 0 0 0 2px rgba(2, 137, 122, 0.3);
 }
 
-/* textarea отдельно (на всякий случай) */
 html.dark .form-textarea {
   resize: vertical;
 }
 
-/* кнопка */
 html.dark .form-btn {
   background: #02897a;
   color: #ffffff;
@@ -351,7 +331,6 @@ html.dark .form-btn:hover {
   background: #02a087;
 }
 
-/* если li с кнопкой имеет фон или рамки */
 html.dark .btn-input {
   background: transparent;
 }
@@ -362,7 +341,7 @@ html.dark #contact-page-form {
   padding: 32px;
 }
 html.dark .form-input-box {
-  background-color: #1e1e1e; /* отличается от секции */
+  background-color: #1e1e1e;
   border: 1px solid #444;
   border-radius: 16px;
   padding: 32px;
@@ -378,9 +357,9 @@ html.dark .form-message.error {
 html.dark .form-message.success {
   color: #51cf66;
 }
-/* ================= DARK THEME — LINKS ================= */
+
 html.dark a {
-  color: #7fd1c8; /* мягкий, читаемый, не кричащий */
+  color: #7fd1c8;
   text-decoration: none;
   transition: color 0.25s ease, text-decoration-color 0.25s ease;
 }

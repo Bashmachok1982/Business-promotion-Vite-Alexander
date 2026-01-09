@@ -1,11 +1,11 @@
-/* ================= Мобильное меню ================= */
-/* мобильное меню */
+/* ======================== MOBILE MENU ======================== */
+
 .mobile-menu {
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-120%);
-  width: calc(100% - 32px); /* ← фикс */
+  width: calc(100% - 32px);
   max-width: 400px;
   padding: 24px;
   border-radius: 0 0 12px 12px;
@@ -13,16 +13,16 @@
   transition: transform 250ms ease-in-out;
   z-index: 9999;
   box-sizing: border-box;
-  /* фон контейнера — чуть светлее, чем белый */
-  background: #f8fdfc; /* можно поиграть с оттенком */
+
+  background: #f8fdfc;
 }
-/* ОТКРЫТОЕ состояние: тот же сдвиг по X (-50%) + Y = 0 */
+
 .mobile-menu.is-open {
   transform: translateX(-50%) translateY(0);
 }
 .menu-close-btn {
   position: absolute;
-  top: 8px; /* чуть ниже края, не перекрывается бордером */
+  top: 8px;
   right: 24px;
   width: 28px;
   height: 28px;
@@ -35,7 +35,7 @@
   cursor: pointer;
   box-sizing: border-box;
 }
-/* сама «коробка» меню */
+
 .modal-menu {
   width: 100%;
   background: #fff;
@@ -44,7 +44,7 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   padding: 24px;
   box-sizing: border-box;
-  position: relative; /* чтобы кнопка закрытия позиционировалась внутри */
+  position: relative;
 }
 .menu-close-icon {
   fill: #02897a;
@@ -58,7 +58,7 @@
   height: 100%;
 }
 .mobile-nav {
-  display: block; /* убираем flex, чтобы не тянуло в строку */
+  display: block;
   gap: 40px;
   list-style: none;
 }
@@ -80,9 +80,9 @@
   transition: color 250ms ease, background-color 250ms ease;
 }
 .mobile-list li:last-child .mobile-link {
-  border-bottom: none; /* у последнего нет линии */
+  border-bottom: none;
 }
-/* соцсети */
+
 .mobile-socials {
   display: flex;
   justify-content: center;
@@ -106,9 +106,8 @@
   height: 26px;
   fill: #02897a;
 }
-/* Кнопки авторизации только в мобильном меню */
+
 .mobile-menu-auth {
-  /* оберни кнопки в этот div в HTML */
   display: flex;
   flex-direction: column;
   gap: 16px;

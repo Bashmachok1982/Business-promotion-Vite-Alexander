@@ -6,7 +6,6 @@ questionItems.forEach(item => {
   header.addEventListener('click', () => {
     const isActive = item.classList.contains('active');
 
-    // Закрываем все
     questionItems.forEach(el => {
       el.classList.remove('active');
 
@@ -16,7 +15,6 @@ questionItems.forEach(item => {
       }
     });
 
-    // Открываем текущий, если не был активен
     if (!isActive) {
       item.classList.add('active');
 
@@ -28,7 +26,6 @@ questionItems.forEach(item => {
   });
 });
 
-// === ДОБАВЬ ЭТО: ПО УМОЛЧАНИЮ ВСЕ ЗАКРЫТЫ ===
 questionItems.forEach(el => {
   el.classList.remove('active');
 

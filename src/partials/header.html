@@ -1,6 +1,5 @@
 <header class="header">
   <div class="container">
-    <!-- ЛЕВАЯ ЧАСТЬ -->
     <div class="navigation">
       <nav class="header-nav">
         <a href="./index.html" class="logo">
@@ -8,7 +7,6 @@
           Product
         </a>
 
-        <!-- SELECT — ТОЛЬКО ПЛАНШЕТ -->
         <select class="nav-select" aria-label="Navigation">
           <option value="./Product.html">Product</option>
           <option value="./Pricing.html">Pricing</option>
@@ -16,7 +14,6 @@
           <option value="./Resources.html">Resources</option>
         </select>
 
-        <!-- DESKTOP NAV -->
         <ul class="header-list">
           <li>
             <a href="./Product.html" class="header-link current">Product</a>
@@ -28,10 +25,8 @@
       </nav>
     </div>
 
-    <!-- ПРАВАЯ ЧАСТЬ -->
     <div class="header-right">
       <div class="header-auth">
-        <!-- неавторизован -->
         <ul class="header-list-btn unauth">
           <li>
             <button
@@ -53,7 +48,6 @@
           </li>
         </ul>
 
-        <!-- авторизован -->
         <div class="header-user auth" style="display: none">
           <span class="user-name">Welcome, User</span>
           <button type="button" class="logout-btn">Logout</button>
@@ -61,7 +55,6 @@
       </div>
 
       <button type="button" class="theme-toggle" aria-label="Toggle theme">
-        <!-- Солнце (светлая тема) -->
         <svg
           class="theme-icon sun-icon"
           width="24"
@@ -80,7 +73,6 @@
           />
         </svg>
 
-        <!-- Луна (тёмная тема) -->
         <svg
           class="theme-icon moon-icon"
           width="24"
@@ -97,7 +89,6 @@
         </svg>
       </button>
 
-      <!-- 🍔 -->
       <button type="button" class="menu-toggle" aria-label="Open menu">
         <svg class="menu-icon" width="32" height="32">
           <use href="./img/icons.svg#icon-menu"></use>

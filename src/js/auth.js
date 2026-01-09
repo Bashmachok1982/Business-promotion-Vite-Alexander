@@ -51,7 +51,7 @@ function bindLogout() {
   if (!logoutBtn) return;
 
   logoutBtn.addEventListener('click', () => {
-    localStorage.setItem(LOGIN_FLAG, 'false'); // важный момент
+    localStorage.setItem(LOGIN_FLAG, 'false');
 
     loadCurrentUser();
     alert('Вы успешно вышли');

@@ -24,7 +24,6 @@
   margin-bottom: 56px;
 }
 
-/* Соцсети */
 .form-list-icons {
   display: flex;
   gap: 20px;
@@ -61,7 +60,6 @@
   transition: fill 0.3s ease;
 }
 
-/* Карта — интерактивная, ширина 870px на десктопе */
 .form-map-wrapper {
   width: 100%;
   max-width: 870px;
@@ -78,7 +76,6 @@
   border: 0;
 }
 
-/* Форма — ширина 870px на десктопе */
 .form-input-box {
   width: 100%;
   max-width: 870px;

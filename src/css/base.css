@@ -42,8 +42,8 @@ img {
   box-sizing: border-box;
   max-width: 100%;
 }
-/* базово — чтобы не растягивался бесконечно */
+
 .input-btn {
   width: 100%;
-  max-width: 500px; /* ⬅️ верхний предел */
+  max-width: 500px;
 }
