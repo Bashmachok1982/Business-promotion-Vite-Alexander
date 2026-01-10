@@ -1,4 +1,4 @@
-/* ===== PRICING SECTION ===== */
+/* ======================== PRICING SECTION ======================== */
 .pricing {
   background: #f8fdfc;
   padding: 80px 0;
@@ -27,23 +27,35 @@
   color: #22343d;
   text-align: center;
   margin-bottom: 40px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pricing-lists {
   display: flex;
+  flex-direction: column;
   gap: 32px;
-  justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .pricing-list-content {
-  width: 322px;
-  min-height: 456px;
+  width: 300px;
+  min-height: 480px;
   border-radius: 8px;
   background: #fff;
   color: #22343d;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-list-content:hover,
+.pricing-list-content:focus {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .pricing-list-content.featured {
@@ -94,6 +106,7 @@
   flex-direction: column;
   gap: 16px;
   align-items: center;
+  flex-grow: 1;
 }
 
 .price-item-text {
@@ -138,51 +151,63 @@
   background: #f0f0f0;
 }
 
-/* ======================== MOBILE (< 768px) ======================== */
-@media (max-width: 412px) {
-  .pricing-lists {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pricing-list-content {
-    width: 100%;
-    max-width: 320px;
+/* ======================== TABLET (min-width: 768px) ======================== */
+@media (min-width: 768px) {
+  .pricing {
+    padding: 100px 0;
   }
 
   .pricing-title {
-    font-size: 28px;
+    font-size: 40px;
   }
-}
 
-/* ======================== TABLET (768px – 1149px) ======================== */
-@media (min-width: 768px) and (max-width: 1149px) {
+  .pricing-text {
+    font-size: 17px;
+    max-width: 600px;
+    margin-bottom: 60px;
+  }
+
   .pricing-lists {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
   }
 
   .pricing-list-content {
-    width: 322px;
-  }
-
-  .pricing-list-content:nth-child(3) {
-    margin: 0 auto;
+    width: 370px;
+    min-height: 500px;
   }
 }
 
-/* ======================== DESKTOP (≥ 1150px) ======================== */
+/* ======================== DESKTOP (min-width: 1150px) ======================== */
 @media (min-width: 1150px) {
+  .pricing {
+    padding: 120px 0;
+  }
+
+  .pricing-subtitle-text {
+    font-size: 28px;
+  }
+
+  .pricing-title {
+    font-size: 44px;
+  }
+
+  .pricing-text {
+    font-size: 18px;
+    max-width: 720px;
+  }
+
   .pricing-lists {
-    gap: 72px;
     flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: center;
   }
+
   .pricing-list-content {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .pricing-list-content:hover,
-  .pricing-list-content:focus {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    width: calc((100% - 60px) / 3);
+    max-width: 400px;
+    min-height: 520px;
   }
 }

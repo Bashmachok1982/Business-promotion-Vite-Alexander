@@ -1,123 +1,265 @@
 /* ======================== COMMUNICATIONS SECTION ======================== */
 .communications {
-  margin-top: 80px;
+  padding: 60px 0;
+  margin-top: 40px;
 }
 
 .communications-content {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 40px;
 }
 
 .communications-text-block {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  max-width: 520px;
+  gap: 20px;
+  text-align: center;
 }
 
 .communications-title {
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
   color: #22343d;
-  line-height: 1.3;
 }
 
 .communications-text {
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.5;
   color: #22343d;
 }
 
 .communications-actions {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  gap: 24px;
 }
 
 .input-btn {
   display: flex;
-  align-items: center;
+  width: 100%;
+  max-width: 380px;
   border: 1px solid #bcd0e5;
   border-radius: 100px;
-  padding: 6px;
-  max-width: 420px;
+  padding: 5px;
+  background: #fff;
+  overflow: hidden;
 }
 
 .communications-input {
-  flex: 1;
+  flex: 1 1 0;
+  min-width: 0;
   border: none;
   outline: none;
-  padding: 12px 16px;
+  padding: 0 8px;
+  font-size: 10px;
 }
 
 .communications-btn {
-  width: 120px;
-  height: 50px;
+  min-width: 110px;
+  height: 44px;
+  padding: 0 12px;
+  border: none;
   border-radius: 100px;
   background: #02897a;
   color: #fff;
   font-weight: 600;
+  font-size: 14px;
+  transition: background 0.25s ease;
+}
+
+.communications-btn:hover {
+  background: #039d8a;
 }
 
 .communications-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  justify-content: center;
+  min-width: 250px;
+  flex-shrink: 0;
+}
+
+.communications-group img {
+  width: 100px;
+  height: auto;
+}
+
+.communications-group p {
+  margin: 0;
+  font-size: 17px;
+  white-space: nowrap;
 }
 
 .span-count-text {
   color: #02897a;
+  font-weight: 600;
+}
+
+.communications-picture {
+  order: 5;
 }
 
 .communications-img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
   display: block;
+  margin: 0 auto;
+}
+.communications-input::placeholder {
+  font-size: 15px;
+  opacity: 0.7;
 }
 
-/* ======================== MOBILE (< 768px) ======================== */
-@media (max-width: 767px) {
+/* ======================== TABLET (min-width: 768px) ======================== */
+@media (min-width: 768px) {
+  .communications {
+    padding: 100px 0;
+    margin-top: 60px;
+  }
+
   .communications-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .communications-actions {
-    align-items: center;
-  }
-
-  .input-btn {
-    min-width: 346px;
-    max-width: 500px;
-  }
-}
-
-/* ======================== TABLET (768px – 1149px) ======================== */
-@media (min-width: 768px) and (max-width: 1149px) {
-  .communications-content {
-    flex-direction: column;
-    text-align: center;
+    gap: 60px;
   }
 
   .communications-text-block {
+    text-align: center;
     max-width: 800px;
-    align-items: center;
+    margin: 0 auto;
+  }
+
+  .communications-title {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
+  .communications-text {
+    font-size: 19px;
+    max-width: 680px;
+    margin: 0 auto;
   }
 
   .communications-actions {
     flex-direction: row;
     justify-content: center;
-    gap: 24px;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: nowrap;
+    max-width: 100%;
   }
 
   .input-btn {
-    max-width: 360px;
+    max-width: 380px;
+    padding: 5px 6px;
+    flex-shrink: 2;
+  }
+
+  .communications-input {
+    padding: 0 12px 0 16px;
+    font-size: 15px;
+  }
+
+  .communications-btn {
+    min-width: 120px;
+    height: 46px;
+    font-size: 14.5px;
+    padding: 0 14px;
+  }
+
+  .communications-group {
+    min-width: 220px;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .communications-group img {
+    width: 110px;
+  }
+
+  .communications-group p {
+    font-size: 15.5px;
+  }
+
+  .communications-img {
+    max-width: 520px;
+  }
+
+  .communications-picture {
+    order: 4;
+  }
+  .communications-input::placeholder {
+    font-size: 16px;
+  }
+
+  .communications-actions > * {
+    flex-shrink: 1;
   }
 }
 
-/* ======================== DESKTOP (≥ 1150px) ======================== */
+/* ======================== DESKTOP (min-width: 1150px) ======================== */
 @media (min-width: 1150px) {
+  .communications {
+    padding: 140px 0;
+    margin-top: 80px;
+  }
+
   .communications-content {
     flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+  }
+
+  .communications-text-block {
+    text-align: left;
+    max-width: 520px;
+    margin: 0;
+  }
+
+  .communications-title {
+    font-size: 56px;
+    line-height: 1.12;
+  }
+
+  .communications-text {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .communications-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .communications-group {
+    justify-content: flex-start;
+  }
+
+  .communications-img {
+    width: 100%;
+    max-width: 640px;
+    margin: 0;
+  }
+
+  .communications-picture {
+    order: initial;
+  }
+  .input-btn {
+    max-width: 500px;
+    padding: 8px 10px;
+  }
+  .communications-input {
+    font-size: 16px;
+    padding: 0 22px;
+  }
+  .communications-btn {
+    min-width: 160px;
+    height: 54px;
+    font-size: 16px;
   }
 }

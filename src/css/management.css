@@ -1,153 +1,118 @@
 /* ======================== MANAGEMENT SECTION ======================== */
+
+
 .management {
+  padding: 40px 0;
   background: #f8fdfc;
 }
+
 .management .container {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
+  gap: 40px;
 }
+
 .management-content {
-  margin-top: 50px;
   max-width: 350px;
+  text-align: center;
 }
+
 .management-subtitle {
   margin-bottom: 8px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.625;
   color: #22343d;
-  text-align: center;
 }
+
 .management-title {
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 32px;
   color: #22343d;
-  margin-bottom: 16px;
-  text-align: center;
 }
+
 .management-text {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.625;
   color: #22343d;
-  margin-bottom: 16px;
 }
+
 .management-list {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.management-subtitle-item {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.625;
-  color: #22343d;
-  text-align: center;
+
+.management-list-item .management-subtitle {
+  margin-bottom: 8px;
 }
+
 .management-image {
-  max-width: 100%;
-  height: auto;
   display: flex;
+  justify-content: center;
 }
 
 .management-img {
-  display: block;
+  width: 100%;
+  max-width: 350px;
   height: auto;
-  max-width: 100%;
-  width: 350px;
+  display: block;
 }
-/* ======================== TABLET (768px – 1149px) ======================== */
-@media (min-width: 768px) and (max-width: 1149px) {
+
+/* ======================== TABLET (min-width: 768px) ======================== */
+
+@media (min-width: 768px) {
   .management .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 50px;
+  }
+
+  .management-content {
+    max-width: 700px;
     text-align: center;
   }
 
-  .management-image {
-    margin-bottom: 24px;
-  }
-
-  .management-image img {
-    width: 100%;
+  .management-img {
     max-width: 610px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .management-content {
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-  .management-text {
-    margin-bottom: 12px;
-    max-width: 700px;
   }
 }
-/* ======================== DESKTOP (≥ 1150px) ======================== */
+
+/* ======================== DESKTOP (min-width: 1150px) ======================== */
+
 @media (min-width: 1150px) {
   .management {
-    padding: 20px 0;
+    padding: 60px 0;
   }
 
   .management .container {
-    display: flex;
     flex-direction: row;
-    gap: 84px;
-    justify-content: center;
     align-items: center;
-  }
-  .management-content {
-    flex: 1;
-    max-width: 486px;
-  }
-  .management-title {
-    font-weight: 700;
-    font-size: 32px;
-    color: #22343d;
-    margin-bottom: 25px;
-  }
-  .management-subtitle {
-    margin-bottom: 12px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.625;
-    color: #22343d;
-  }
-  .management-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.625;
-    color: #22343d;
-  }
-  .management-list {
-    display: flex;
-    gap: 25px;
-    flex-direction: column;
-    margin-top: 30px;
-  }
-  .management-subtitle-item {
-    margin-bottom: 12px;
-  }
-  .management-image {
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
-    width: 540px;
+    gap: 84px;
   }
 
-  .management-image img {
-    height: auto;
-    display: block;
+  .management-content {
+    max-width: 486px;
+    text-align: left;
+  }
+
+  .management-subtitle,
+  .management-title,
+  .management-text {
+    text-align: left;
+  }
+
+  .management-list {
+    margin-top: 30px;
+  }
+
+  .management-image {
+    justify-content: flex-end;
+  }
+
+  .management-img {
     max-width: 540px;
-    width: 100%;
   }
 }

@@ -1,48 +1,59 @@
 /* ======================== FEEDBACK SECTION ======================== */
 .feedback {
   background: #f8fdfc;
+  padding: 60px 0;
 }
+
 .feedback-title {
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.4;
-  letter-spacing: 0.01em;
-  color: #22343d;
+  font-size: 28px;
   text-align: center;
-  margin-bottom: 10px;
+  color: #22343d;
+  margin-bottom: 16px;
 }
 
 .feedback-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.75;
-  letter-spacing: 0.01em;
   color: #22343d;
-  max-width: 537px;
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto 40px;
+  max-width: 90%;
 }
 
 .feedback-list {
   display: flex;
-  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 40px auto 0;
 }
 
 .feedback-list-item {
+  width: 288px;
+  max-width: 100%;
   border: 1px solid #dedede;
   border-radius: 5px;
-  padding: 20px 20px;
+  padding: 24px;
   background: #fff;
-
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-list-item:hover,
+.feedback-list-item:focus {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .star {
   width: 19px;
   height: 18px;
-  flex-shrink: 0;
   fill: #fbbf24;
 }
 
@@ -54,16 +65,13 @@
   display: flex;
   gap: 4px;
   margin-bottom: 16px;
-  line-height: 1;
 }
 
 .feedback-list-text {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.75;
-  letter-spacing: 0.01em;
   color: #737373;
   margin-bottom: 16px;
+  flex-grow: 1;
 }
 
 .feedback-author {
@@ -72,7 +80,7 @@
   margin-top: auto;
 }
 
-.feedback-img {
+.feedback-author img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -87,64 +95,73 @@
 .feedback-subtitle {
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.01em;
   color: #02897a;
 }
 
 .feedback-item-text {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.71429;
-  letter-spacing: 0.01em;
   color: #252b42;
 }
-/* ======================== MOBILE (< 768px) ======================== */
-@media screen and (max-width: 767px) {
-  .feedback-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+
+/* ======================== TABLET (min-width: 768px) ======================== */
+@media (min-width: 768px) {
+  .feedback {
+    padding: 80px 0;
   }
 
-  .feedback-list-item {
-    width: 100%;
-    max-width: 327px;
-  }
-}
-/* ======================== TABLET (768px – 1149px) ======================== */
-@media screen and (min-width: 768px) {
   .feedback-title {
-    font-size: 32px;
+    font-size: 36px;
+  }
+
+  .feedback-text {
+    font-size: 17px;
+    margin-bottom: 60px;
   }
 
   .feedback-list {
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 32px;
+    margin-top: 60px;
   }
 
   .feedback-list-item {
-    width: 327px;
+    width: 356px;
+    max-width: 356px;
+    padding: 28px;
+  }
+
+  .feedback-list-text {
+    font-size: 17px;
   }
 }
-/* ======================== DESKTOP (≥ 1150px) ======================== */
-@media screen and (min-width: 1150px) {
+
+/* ======================== ОТ 1150px (десктоп) ======================== */
+@media (min-width: 1150px) {
+  .feedback {
+    padding: 100px 0;
+  }
+
+  .feedback-title {
+    font-size: 40px;
+  }
+
+  .feedback-text {
+    font-size: 18px;
+    max-width: 720px;
+  }
+
   .feedback-list {
-    display: flex;
-    flex-direction: row;
-    gap: 64px;
+    gap: 30px;
+    justify-content: center;
   }
 
   .feedback-list-item {
-    width: calc((100% - 2 * 64px) / 3);
-    height: 240px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc((100% - 60px) / 3);
+    max-width: 380px;
+    padding: 32px;
   }
-  .feedback-list-item:hover,
-  .feedback-list-item:focus {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+
+  .feedback-list-text {
+    font-size: 18px;
   }
 }

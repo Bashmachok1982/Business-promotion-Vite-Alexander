@@ -4,11 +4,9 @@
   const navLinks = document.querySelectorAll('.mobile-nav a');
   const closeButton = document.querySelector('.menu-close-btn');
 
-  // Кнопки авторизации внутри мобильного меню
   const modalOpenButtonsInMenu =
     mobileModal.querySelectorAll('[data-modal-open]');
 
-  // Новые элементы для авторизованного состояния в мобильном меню
   const mobileUnauthBlock = mobileModal.querySelector(
     '.mobile-menu-auth.unauth'
   );
@@ -16,39 +14,52 @@
   const mobileUserName = mobileModal.querySelector('#mobile-user-name');
   const mobileLogoutBtn = mobileModal.querySelector('.logout-btn-mobile');
 
-  // Ключ localStorage (должен совпадать с основным скриптом авторизации)
   const STORAGE_KEY = 'currentUser';
+  const LOGIN_FLAG = 'isLoggedIn';
 
   let currentUser = null;
+  let isLoggedIn = false;
 
-  // Загружаем пользователя при открытии страницы
-  const savedUser = localStorage.getItem(STORAGE_KEY);
-  if (savedUser) {
-    currentUser = JSON.parse(savedUser);
+  // ============================
+  // загрузка состояния
+  // ============================
+  function loadUserState() {
+    const savedUser = localStorage.getItem(STORAGE_KEY);
+    const flag = localStorage.getItem(LOGIN_FLAG) === 'true';
+
+    currentUser = savedUser ? JSON.parse(savedUser) : null;
+    isLoggedIn = flag;
+
+    if (!isLoggedIn) {
+      currentUser = null; // пользователь сохранен, но не залогинен
+    }
   }
 
-  // Обновляем состояние мобильного меню (кнопки ↔ приветствие)
+  // ============================
+  // обновление UI мобильного меню
+  // ============================
   function updateMobileMenuAuth() {
-    if (currentUser && mobileUnauthBlock && mobileAuthBlock) {
+    loadUserState();
+
+    if (currentUser && isLoggedIn) {
       mobileUnauthBlock.style.display = 'none';
       mobileAuthBlock.style.display = 'flex';
+
       if (mobileUserName) {
         mobileUserName.textContent = currentUser.name;
       }
     } else {
-      if (mobileUnauthBlock) mobileUnauthBlock.style.display = 'flex';
-      if (mobileAuthBlock) mobileAuthBlock.style.display = 'none';
+      mobileUnauthBlock.style.display = 'flex';
+      mobileAuthBlock.style.display = 'none';
     }
   }
 
-  // Вызываем при загрузке
-  updateMobileMenuAuth();
-
-  // Функции открытия/закрытия меню
+  // ============================
+  // открытие / закрытие меню
+  // ============================
   function openModal() {
-    mobileModal.classList.add('is-open');
-    // При каждом открытии меню обновляем состояние авторизации
     updateMobileMenuAuth();
+    mobileModal.classList.add('is-open');
   }
 
   function closeModal() {
@@ -56,38 +67,41 @@
   }
 
   function toggleModal() {
-    if (mobileModal.classList.contains('is-open')) {
-      closeModal();
-    } else {
-      openModal();
-    }
+    mobileModal.classList.contains('is-open') ? closeModal() : openModal();
   }
 
-  // Обработчики
+  // ============================
+  // обработчики
+  // ============================
   burgerButton.addEventListener('click', toggleModal);
   closeButton.addEventListener('click', closeModal);
 
-  // Закрытие по клику на навигационную ссылку
-  navLinks.forEach(link => {
-    link.addEventListener('click', closeModal);
-  });
+  navLinks.forEach(link => link.addEventListener('click', closeModal));
 
-  // При клике на кнопку Sign In / Sign Up внутри меню — закрываем меню
-  modalOpenButtonsInMenu.forEach(btn => {
-    btn.addEventListener('click', () => {
-      closeModal();
-      // Модалка авторизации откроется сама благодаря основному скрипту
-    });
-  });
+  modalOpenButtonsInMenu.forEach(btn =>
+    btn.addEventListener('click', () => closeModal())
+  );
 
-  // Логаут из мобильного меню
+  // ============================
+  // ЛОГАУТ В МОБИЛЬНОМ МЕНЮ
+  // ============================
   if (mobileLogoutBtn) {
     mobileLogoutBtn.addEventListener('click', () => {
-      currentUser = null;
-      // Не удаляем из localStorage (чтобы можно было войти снова)
+      // удаляем только флаг входа
+      localStorage.setItem(LOGIN_FLAG, 'false');
+
+      // данные пользователя остаются!
       updateMobileMenuAuth();
-      closeModal(); // закрываем меню после выхода
+      closeModal();
       alert('Вы успешно вышли');
     });
   }
+
+  // ============================
+  // синхронизация при смене вкладки / обновлении
+  // ============================
+  window.addEventListener('storage', updateMobileMenuAuth);
+
+  // начальная инициализация
+  updateMobileMenuAuth();
 })();

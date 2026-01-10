@@ -1,15 +1,15 @@
 /* ======================== QUESTION SECTION ======================== */
-
 .question {
   margin: 80px 0;
 }
 
 .question-title {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 28px;
   color: #22343d;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  line-height: 1.3;
 }
 
 .question-text {
@@ -17,21 +17,24 @@
   font-size: 15px;
   color: #22343d;
   text-align: center;
-  max-width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
+  max-width: 90%;
 }
 
 .question-list {
   display: flex;
   flex-direction: column;
-  margin: 40px auto 0;
-  padding: 0;
+  gap: 0;
   list-style: none;
+  padding: 0;
+  margin: 40px auto 0;
+  max-width: 920px;
 }
 
 .question-list-item {
   border-bottom: 1px solid #e7e7e7;
-  padding: 16px 0;
+  padding: 20px 0;
+  cursor: pointer;
 }
 
 .question-header {
@@ -54,62 +57,39 @@
 }
 
 .question-answer {
-  margin-top: 8px;
+  margin-top: 12px;
   font-size: 15px;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #22343d;
-}
-.question-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
   opacity: 0;
 }
 
 .question-list-item.active .question-answer {
-  max-height: 500px;
+  max-height: 600px;
   opacity: 1;
 }
 
-.question-header {
-  cursor: pointer;
-}
+/* ======================== TABLET (min-width: 768px) ======================== */
+@media (min-width: 768px) {
+  .question {
+    margin: 100px 0;
+  }
 
-/* ======================== MOBILE (< 768px) ======================== */
-
-@media screen and (min-width: 412px) {
   .question-title {
-    font-size: 28px;
+    font-size: 36px;
   }
 
   .question-text {
     font-size: 16px;
-    max-width: 380px;
-  }
-
-  .question-subtitle {
-    font-size: 17px;
-  }
-}
-
-/* ======================== TABLET (768px – 1149px) ======================== */
-
-@media screen and (min-width: 768px) {
-  .question {
-    margin: 120px 0;
-  }
-
-  .question-title {
-    font-size: 32px;
-  }
-
-  .question-text {
-    max-width: 520px;
+    max-width: 580px;
+    margin-bottom: 60px;
   }
 
   .question-list {
-    max-width: 760px;
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .question-subtitle {
@@ -118,26 +98,29 @@
 
   .question-answer {
     font-size: 16px;
-    line-height: 1.5;
   }
 }
 
-/* ======================== DESKTOP (≥ 1150px) ======================== */
-
-@media screen and (min-width: 1150px) {
+/* ======================== DESKTOP (min-width: 1150px) ======================== */
+@media (min-width: 1150px) {
   .question {
-    margin: 150px 0;
+    margin: 120px 0;
   }
 
   .question-title {
-    font-size: 34px;
+    font-size: 40px;
+  }
+
+  .question-text {
+    font-size: 17px;
+    max-width: 680px;
   }
 
   .question-list {
     max-width: 920px;
   }
 
-  .question-text {
-    max-width: 600px;
+  .question-subtitle {
+    font-size: 20px;
   }
 }

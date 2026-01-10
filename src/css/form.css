@@ -1,27 +1,26 @@
 /* ======================== FORM SECTION ======================== */
 .form {
-  padding: 100px 0;
+  padding: 80px 0;
   background: #fff;
 }
 
 .form-title {
   font-weight: 700;
-  font-size: 34px;
-  line-height: 1.67647;
-  letter-spacing: 0.01em;
+  font-size: 32px;
   text-align: center;
   color: #252b42;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .form-text {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.55556;
-  letter-spacing: 0.01em;
+  font-size: 16px;
   text-align: center;
   color: #374754;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-list-icons {
@@ -30,41 +29,41 @@
   justify-content: center;
   list-style: none;
   padding: 0;
-  margin: 0 auto 80px;
+  margin: 0 auto 60px;
 }
 
 .form-social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #edfffc;
-  transition: background 0.3s ease, transform 0.3s ease;
+  background: #edfffc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
 }
 
 .form-social-link:hover {
-  background-color: #02897a;
+  background: #02897a;
   transform: scale(1.1);
-}
-
-.form-social-link:hover .form-icons {
-  fill: #fff;
 }
 
 .form-icons {
   width: 24px;
   height: 24px;
   fill: #02897a;
-  transition: fill 0.3s ease;
+  transition: fill 0.3s;
+}
+
+.form-social-link:hover .form-icons {
+  fill: #fff;
 }
 
 .form-map-wrapper {
   width: 100%;
   max-width: 870px;
-  height: 500px;
-  margin: 0 auto 80px;
+  height: 400px;
+  margin: 0 auto 60px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -83,36 +82,31 @@
   background: #fff;
   border: 1px solid #e8e8e8;
   border-radius: 39px;
-  padding: 40px 50px;
+  padding: 30px 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
 .form-subtitle {
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.375;
-  color: #252b42;
   text-align: center;
-  margin-bottom: 48px;
+  color: #252b42;
+  margin-bottom: 40px;
 }
 
 .form-input-list {
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  gap: 35px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.input-item {
-  width: 100%;
-}
-
 .form-input,
 .form-textarea {
   width: 100%;
-  padding: 19px 20px;
+  padding: 16px 20px;
   background: #f5f5f5;
   border: 1px solid #e8e8e8;
   border-radius: 39px;
@@ -123,13 +117,13 @@
 
 .form-textarea {
   resize: none;
-  height: 193px;
+  height: 160px;
   border-radius: 20px;
 }
 
 .input-item.btn-input {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .form-btn {
@@ -142,66 +136,46 @@
   border: none;
   border-radius: 35px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s;
 }
 
-.form-btn:hover,
-.form-btn:focus {
+.form-btn:hover {
   background: #02a087;
-  transform: scale(1.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
 }
+
 .form-message {
   text-align: center;
   font-weight: 500;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   min-height: 28px;
 }
 
 .form-message.success {
   color: #02897a;
 }
-
 .form-message.error {
   color: #d93025;
 }
-/* ======================== MOBILE (< 768px) ======================== */
-@media (max-width: 767px) {
+
+/* ======================== TABLET (min-width: 768px) ======================== */
+@media (min-width: 768px) {
+  .form {
+    padding: 100px 0;
+  }
+
   .form-title {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .form-text {
-    font-size: 16px;
+    font-size: 18px;
+    margin-bottom: 60px;
   }
 
   .form-list-icons {
-    margin-bottom: 60px;
-  }
-
-  .form-map-wrapper {
-    height: 400px;
-    margin-bottom: 60px;
-  }
-
-  .form-input-box {
-    padding: 30px 20px;
-  }
-
-  .form-subtitle {
-    margin-bottom: 40px;
-  }
-
-  .form-input-list {
-    gap: 35px;
-  }
-}
-
-/* ======================== TABLET & DESKTOP (≥ 768px) ======================== */
-@media (min-width: 768px) {
-  .form-title {
-    font-size: 40px;
+    margin-bottom: 80px;
   }
 
   .form-map-wrapper {
@@ -211,5 +185,36 @@
 
   .form-input-box {
     padding: 50px 80px;
+  }
+
+  .form-subtitle {
+    margin-bottom: 48px;
+  }
+
+  .form-input-list {
+    gap: 45px;
+  }
+
+  .form-textarea {
+    height: 193px;
+  }
+}
+
+/* ======================== DESKTOP (min-width: 1150px) ======================== */
+@media (min-width: 1150px) {
+  .form {
+    padding: 120px 0;
+  }
+
+  .form-title {
+    font-size: 44px;
+  }
+
+  .form-text {
+    font-size: 18px;
+  }
+
+  .form-list-icons {
+    gap: 30px;
   }
 }
