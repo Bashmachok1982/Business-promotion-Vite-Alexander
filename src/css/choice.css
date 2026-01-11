@@ -1,6 +1,6 @@
 /* ======================== CHOICE SECTION ======================== */
 .choice {
-  padding: 80px 0;
+  padding: 40px 0;
   background: #edfffc;
 }
 
@@ -89,7 +89,7 @@
 /* ======================== TABLET (min-width: 768px) ======================== */
 @media (min-width: 768px) {
   .choice {
-    padding: 100px 0;
+    padding: 40px 0;
   }
 
   .choice-title {
@@ -113,7 +113,7 @@
 /* ======================== DESKTOP (min-width: 1150px) ======================== */
 @media (min-width: 1150px) {
   .choice {
-    padding: 120px 0;
+    padding: 40px 0;
   }
 
   .choice-title {

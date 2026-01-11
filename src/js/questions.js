@@ -6,31 +6,34 @@ questionItems.forEach(item => {
   header.addEventListener('click', () => {
     const isActive = item.classList.contains('active');
 
+    // закрываем все вопросы
     questionItems.forEach(el => {
       el.classList.remove('active');
 
-      const use = el.querySelector('.question-icon use');
-      if (use) {
-        use.setAttribute('href', './img/icons.svg#icon-plus-circle');
+      const icon = el.querySelector('.question-icon');
+      if (icon) {
+        icon.src = './img/plus.svg';
       }
     });
 
+    // если кликнули по закрытому — открыть
     if (!isActive) {
       item.classList.add('active');
 
-      const currentUse = item.querySelector('.question-icon use');
-      if (currentUse) {
-        currentUse.setAttribute('href', './img/icons.svg#icon-minus-circle');
+      const icon = item.querySelector('.question-icon');
+      if (icon) {
+        icon.src = './img/minus.svg';
       }
     }
   });
 });
 
+// начальное состояние — все закрыты и плюсики
 questionItems.forEach(el => {
   el.classList.remove('active');
 
-  const use = el.querySelector('.question-icon use');
-  if (use) {
-    use.setAttribute('href', './img/icons.svg#icon-plus-circle');
+  const icon = el.querySelector('.question-icon');
+  if (icon) {
+    icon.src = './img/plus.svg';
   }
 });

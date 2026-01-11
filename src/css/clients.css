@@ -1,6 +1,6 @@
 /* ======================== CLIENTS SECTION ======================== */
 .clients {
-  padding: 60px 0;
+  padding: 100px 0;
   background: #f8fdfc;
 }
 
@@ -9,7 +9,7 @@
   font-size: 40px;
   color: #22343d;
   text-align: center;
-  margin: 100px auto 50px;
+  margin: 0 auto 50px;
 }
 
 .clients-list {
@@ -19,7 +19,7 @@
   align-items: center;
   gap: 64px;
   padding: 0;
-  margin: 0 0 120px;
+  margin: 0 0 50px;
   list-style: none;
 }
 
@@ -43,7 +43,7 @@
 @media (min-width: 768px) {
   .clients-title {
     font-size: 36px;
-    margin: 120px auto 60px;
+    margin: 0 auto 50px;
   }
 
   .clients-list {
@@ -52,7 +52,7 @@
     align-items: center;
     gap: 80px;
     max-width: 700px;
-    margin: 0 auto 120px;
+    margin: 0 auto 50px;
     flex-direction: row;
   }
 
@@ -65,7 +65,7 @@
 @media (min-width: 1150px) {
   .clients-title {
     font-size: 40px;
-    margin: 100px auto 50px;
+    margin: 0 auto 50px;
   }
 
   .clients-list {
@@ -73,7 +73,7 @@
     justify-content: center;
     align-items: center;
     gap: 64px;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
     flex-direction: row;
   }
 

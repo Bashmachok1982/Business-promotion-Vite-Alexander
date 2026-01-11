@@ -1,7 +1,6 @@
 /* ======================== COMMUNICATIONS SECTION ======================== */
 .communications {
   padding: 60px 0;
-  margin-top: 40px;
 }
 
 .communications-content {
@@ -118,8 +117,7 @@
 /* ======================== TABLET (min-width: 768px) ======================== */
 @media (min-width: 768px) {
   .communications {
-    padding: 100px 0;
-    margin-top: 60px;
+    padding: 60px 0;
   }
 
   .communications-content {
@@ -203,8 +201,7 @@
 /* ======================== DESKTOP (min-width: 1150px) ======================== */
 @media (min-width: 1150px) {
   .communications {
-    padding: 140px 0;
-    margin-top: 80px;
+    padding: 60px 0;
   }
 
   .communications-content {

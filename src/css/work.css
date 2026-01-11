@@ -1,6 +1,6 @@
 /* ======================== WORK SECTION ======================== */
 .work {
-  padding: 80px 0;
+  padding: 40px 0;
   background: #fff;
 }
 
@@ -9,7 +9,7 @@
   font-size: 28px;
   text-align: center;
   color: #22343d;
-  margin: 60px auto 50px;
+  margin: 20px auto 20px;
 }
 
 .work-list {
@@ -98,12 +98,12 @@
 /* ======================== TABLET (min-width: 768px) ======================== */
 @media (min-width: 768px) {
   .work {
-    padding: 100px 0;
+    padding: 40px 0;
   }
 
   .work-title {
     font-size: 36px;
-    margin: 80px auto 72px;
+    margin: 20px auto 20px;
   }
 
   .work-list {
@@ -157,12 +157,12 @@
 /* ======================== DESKTOP (min-width: 1150px) ======================== */
 @media (min-width: 1150px) {
   .work {
-    padding: 120px 0;
+    padding: 40px 0;
   }
 
   .work-title {
     font-size: 44px;
-    margin: 100px auto 90px;
+    margin: 20px auto 20px;
   }
 
   .work-list {

@@ -46,8 +46,6 @@
 .question-icon {
   width: 22px;
   height: 22px;
-  flex-shrink: 0;
-  fill: #02897a;
 }
 
 .question-subtitle {

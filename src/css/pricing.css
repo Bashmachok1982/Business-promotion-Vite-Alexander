@@ -1,7 +1,7 @@
 /* ======================== PRICING SECTION ======================== */
 .pricing {
   background: #f8fdfc;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .pricing-subtitle-text {
@@ -154,7 +154,7 @@
 /* ======================== TABLET (min-width: 768px) ======================== */
 @media (min-width: 768px) {
   .pricing {
-    padding: 100px 0;
+    padding: 40px 0;
   }
 
   .pricing-title {
@@ -183,7 +183,7 @@
 /* ======================== DESKTOP (min-width: 1150px) ======================== */
 @media (min-width: 1150px) {
   .pricing {
-    padding: 120px 0;
+    padding: 40px 0;
   }
 
   .pricing-subtitle-text {

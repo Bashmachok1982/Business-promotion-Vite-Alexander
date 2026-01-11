@@ -1,7 +1,7 @@
 /* ======================== FEEDBACK SECTION ======================== */
 .feedback {
   background: #f8fdfc;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 .feedback-title {
@@ -107,7 +107,7 @@
 /* ======================== TABLET (min-width: 768px) ======================== */
 @media (min-width: 768px) {
   .feedback {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 
   .feedback-title {
@@ -138,7 +138,7 @@
 /* ======================== ОТ 1150px (десктоп) ======================== */
 @media (min-width: 1150px) {
   .feedback {
-    padding: 100px 0;
+    padding: 40px 0;
   }
 
   .feedback-title {
