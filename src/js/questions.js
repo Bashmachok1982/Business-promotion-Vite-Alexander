@@ -11,7 +11,7 @@ questionItems.forEach(item => {
 
       const use = el.querySelector('.question-icon use');
       if (use) {
-        use.setAttribute('href', './img/icons.svg#icon-plus_circle');
+        use.setAttribute('href', './img/icons.svg#icon-plus-circle');
       }
     });
 
@@ -20,7 +20,7 @@ questionItems.forEach(item => {
 
       const currentUse = item.querySelector('.question-icon use');
       if (currentUse) {
-        currentUse.setAttribute('href', './img/icons.svg#icon-minus_circle');
+        currentUse.setAttribute('href', './img/icons.svg#icon-minus-circle');
       }
     }
   });
@@ -31,6 +31,6 @@ questionItems.forEach(el => {
 
   const use = el.querySelector('.question-icon use');
   if (use) {
-    use.setAttribute('href', './img/icons.svg#icon-plus_circle');
+    use.setAttribute('href', './img/icons.svg#icon-plus-circle');
   }
 });

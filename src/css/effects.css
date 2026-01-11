@@ -1,6 +1,6 @@
 /* ======================== EFFECTS SECTION ======================== */
 .effects {
-  margin: 80px 0;
+  padding: 40px 0;
 }
 
 .effects-title {
@@ -76,10 +76,6 @@
 
 /* ======================== TABLET (min-width: 768px) ======================== */
 @media (min-width: 768px) {
-  .effects {
-    margin: 100px 0;
-  }
-
   .effects-title {
     font-size: 36px;
     margin-bottom: 48px;
@@ -108,10 +104,6 @@
 
 /* ======================== DESKTOP (min-width: 1150px) ======================== */
 @media (min-width: 1150px) {
-  .effects {
-    margin: 120px 0;
-  }
-
   .effects-title {
     font-size: 40px;
   }

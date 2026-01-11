@@ -35,11 +35,11 @@
 <symbol id="icon-mobile-screen" viewBox="0 0 21 32">
 <path fill="#02897a" style="fill: var(--color15, #02897a)" d="M16.935 2.286h-13.299c-1.377 0-2.494 1.152-2.494 2.571v22.286c0 1.42 1.117 2.571 2.494 2.571h13.299c1.377 0 2.494-1.152 2.494-2.571v-22.286c0-1.42-1.117-2.571-2.494-2.571zM12.779 26.238c0 0.52-0.374 0.905-0.831 0.905h-3.371c-0.41 0-0.784-0.386-0.784-0.857s0.374-0.857 0.831-0.857h3.325c0.457 0 0.831 0.386 0.831 0.809zM16.104 22.857h-11.636v-17.143h11.636v17.143z"></path>
 </symbol>
-<symbol id="icon-minus_circle" viewBox="0 0 32 32">
-<path fill="#02897a" style="fill: var(--color15, #02897a)" d="M0 16c0-8.832 7.168-16 16-16s16 7.168 16 16c0 8.832-7.168 16-16 16s-16-7.168-16-16zM8 17.6h16v-3.2h-16v3.2z"></path>
+<symbol id="icon-minus-circle" viewBox="0 0 32 32">
+<path fill="#02897a"  d="M0 16c0-8.832 7.168-16 16-16s16 7.168 16 16c0 8.832-7.168 16-16 16s-16-7.168-16-16zM8 17.6h16v-3.2h-16v3.2z"></path>
 </symbol>
-<symbol id="icon-plus_circle" viewBox="0 0 32 32">
-<path fill="#02897a" style="fill: var(--color15, #02897a)" d="M0 16c0-8.832 7.168-16 16-16s16 7.168 16 16c0 8.832-7.168 16-16 16s-16-7.168-16-16zM17.6 17.6h6.4v-3.2h-6.4v-6.4h-3.2v6.4h-6.4v3.2h6.4v6.4h3.2v-6.4z"></path>
+<symbol id="icon-plus-circle" viewBox="0 0 32 32">
+<path fill="#02897a"  d="M0 16c0-8.832 7.168-16 16-16s16 7.168 16 16c0 8.832-7.168 16-16 16s-16-7.168-16-16zM17.6 17.6h6.4v-3.2h-6.4v-6.4h-3.2v6.4h-6.4v3.2h6.4v6.4h3.2v-6.4z"></path>
 </symbol>
 <symbol id="icon-facebook" viewBox="0 0 32 32">
 <path fill="none" stroke="#02897a" style="stroke: var(--color15, #02897a)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 2.667h-4c-1.768 0-3.464 0.702-4.714 1.953s-1.953 2.946-1.953 4.714v4h-4v5.333h4v10.667h5.333v-10.667h4l1.333-5.333h-5.333v-4c0-0.354 0.141-0.693 0.391-0.943s0.589-0.391 0.943-0.391h4v-5.333z"></path>
