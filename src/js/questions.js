@@ -12,7 +12,7 @@ questionItems.forEach(item => {
 
       const icon = el.querySelector('.question-icon');
       if (icon) {
-        icon.src = 'img/plus.webp'; // ← ТАК (без точки и слеша)
+        icon.src = '/img/plus.webp'; // ← ТАК (без точки и слеша)
       }
     });
 
@@ -22,7 +22,7 @@ questionItems.forEach(item => {
 
       const icon = item.querySelector('.question-icon');
       if (icon) {
-        icon.src = 'img/minus.webp'; // ← ТАК
+        icon.src = '/img/minus.webp'; // ← ТАК
       }
     }
   });
@@ -34,6 +34,6 @@ questionItems.forEach(el => {
 
   const icon = el.querySelector('.question-icon');
   if (icon) {
-    icon.src = 'img/plus.webp'; // ← ТАК
+    icon.src = '/img/plus.webp'; // ← ТАК
   }
 });
