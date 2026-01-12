@@ -5,7 +5,7 @@ import './js/navigation-active.js';
 import './js/footer-form.js';
 import './js/contact-form.js';
 import './js/theme-toggle.js';
-import './js/questions.js';
+/*import './js/questions.js';*/
 import './js/contact-page-form.js';
 import './js/pricing-order.js';
 import './js/sign-in.js';
