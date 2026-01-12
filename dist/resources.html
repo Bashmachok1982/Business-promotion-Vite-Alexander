@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Business-promotion-Vite-Alexander/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business-promotion</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <script type="module" crossorigin src="/Business-promotion-Vite-Alexander/assets/main-CnzBf8uS.js"></script>
+    <link rel="stylesheet" crossorigin href="/Business-promotion-Vite-Alexander/assets/main-DCI2Vojb.css">
+  </head>
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="navigation">
+      <nav class="header-nav">
+        <a href="./index.html" class="logo">
+          <img src="data:image/webp;base64,UklGRnoCAABXRUJQVlA4WAoAAAAQAAAAJwAAIwAAQUxQSCgBAAABkFXbdthGB4IY5EEIg5hBy8BhkDDwMDAEDQNDEARDeBAE4X74NpaDICImgKujBV8ZqSzfECmpfUGkju/rdvn7NQH3P9oV5X8WeDtN48ouNWBzbVjZJekNpRtNMNX2YV3uh0gde8DiVn51tgW85SuUbjp5Sn2G1anAanTXyImS7gWTew3JwtM1KK4O0ULppgNp9uXzzSVsRjfYTHJyNSqs7gHV6Ey4G8sHy5jpW0o6WD+oLj/vsg2au8FmUkNnQrYDu2lDGjzdBshuIzKIdDNM7jWgBWyyPaC6x6n9BUzyFUjTcctsf27YxWTAU7b+8eDscpiBdI9hLNIK/JNNxvGswCQ/X3GMdAn0S5r8DKyHZHCkWQFKlVqMIlJSlgOUGxfGrgy+srQ7FlZQOCAsAQAAcAcAnQEqKAAkAD6RPpdIJaOiIScu2LASCWwAuzMl+L+8cd30X4Dboc7duAHsQegB5YvshA/L2iAgAnByYofYMHbE9cAA/vXAP//6KbbIx//909ftPViBAIGPXLdvs634iRl6FaW0HOCGr82qwqndw37EobRhm8b8Jme4OtIbYVHbMTch+jVmrkaRsDEI79Cske2oH+OkG6tHn9o6+TdR2fFn9O/B0wo4sZzB/6KV6JeXlACD9W+be8XEDm5JTFKVduxoAopZNk9d+U1XxB3zOPH7XN/ljMCU22Az9UCFCacN9iaz/7bP//cUVYyROUoT9UD/5bvo7GY75wZ+n/YPP5A//0Nyl6xF4pKRb0QGdrKPjI9OMPQ3X+xEokzTrjFava7Rs8PfAob6MAAA" alt="logo" />
+          Product
+        </a>
+
+        <select class="nav-select" aria-label="Navigation">
+          <option value="./product.html">Product</option>
+          <option value="./pricings.html">Pricing</option>
+          <option value="./customer.html">Customer</option>
+          <option value="./resources.html">Resources</option>
+        </select>
+
+        <ul class="header-list">
+          <li>
+            <a href="./product.html" class="header-link current">Product</a>
+          </li>
+          <li><a href="./pricings.html" class="header-link">Pricing</a></li>
+          <li><a href="./customer.html" class="header-link">Customer</a></li>
+          <li><a href="./resources.html" class="header-link">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <div class="header-auth">
+        <ul class="header-list-btn unauth">
+          <li>
+            <button
+              type="button"
+              data-modal-open="signin"
+              class="header-btn-in"
+            >
+              Sign In
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              data-modal-open="signup"
+              class="header-btn-up"
+            >
+              Sign Up
+            </button>
+          </li>
+        </ul>
+
+        <div class="header-user auth" style="display: none">
+          <span class="user-name">Welcome, User</span>
+          <button type="button" class="logout-btn">Logout</button>
+        </div>
+      </div>
+
+      <button type="button" class="theme-toggle" aria-label="Toggle theme">
+        <svg
+          class="theme-icon sun-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22ZM12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4Z"
+            fill="#02897A"
+          />
+          <path
+            d="M19 12C19 8.134 15.865 5 12 5V19C15.865 19 19 15.866 19 12Z"
+            fill="#02897A"
+          />
+        </svg>
+
+        <svg
+          class="theme-icon moon-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="display: none"
+        >
+          <path
+            d="M21.64 13A10 10 0 1 1 11 2.36A8 8 0 0 0 21.64 13Z"
+            fill="#02897A"
+          />
+        </svg>
+      </button>
+
+      <button type="button" class="menu-toggle" aria-label="Open menu">
+        <svg class="menu-icon" width="32" height="32">
+          <use href="/Business-promotion-Vite-Alexander/assets/icons-LooO4xkB.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="communications">
+  <div class="container">
+    <div class="communications-content">
+      <div class="communications-text-block">
+        <h1 class="communications-title">
+          Great Business <br />
+          made with Product.
+        </h1>
+
+        <p class="communications-text">
+          Build better customer relationships easily messaging that provides a
+          more personal experience for you and your customers.
+        </p>
+
+        <div class="communications-actions">
+          <form class="input-btn" id="communications-form">
+            <input
+              class="communications-input"
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit" class="communications-btn">Join Now</button>
+          </form>
+
+          <div class="communications-group">
+            <img src="data:image/webp;base64,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" alt="Group people" />
+            <p class="communications-text">
+              Join over <span class="span-count-text">4,000+</span> other
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <picture class="communications-picture">
+        <source
+          srcset="/Business-promotion-Vite-Alexander/assets/communications-tablet-1x-BojeN9u7.webp, /Business-promotion-Vite-Alexander/assets/communications-tablet-2x-lBGDklMX.webp"
+          media="(min-width: 1150px)"
+        />
+        <source
+          srcset="/Business-promotion-Vite-Alexander/assets/communications-tablet-1x-BojeN9u7.webp, /Business-promotion-Vite-Alexander/assets/communications-tablet-2x-lBGDklMX.webp"
+          media="(min-width: 768px)"
+        />
+        <img
+          class="communications-img"
+          src="/Business-promotion-Vite-Alexander/assets/communications-mobile-2x-D1JoHQ-E.webp"
+          alt="communications"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <section class="stories">
+  <div class="container">
+    <h2 class="stories-title">Latest Stories</h2>
+    <p class="stories-text">
+      We focus on ergonomics and meeting you where you work. It's only a
+      keystroke away.
+    </p>
+    <ul class="stories-list">
+      <li class="stories-list-item">
+        <picture>
+          <!-- Десктоп от 1150px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-tablet-1x-tvvs871i.webp, /Business-promotion-Vite-Alexander/assets/stories-tablet-2x-DF1iOh--.webp"
+            media="(min-width: 1150px)"
+          />
+          <!-- Планшет от 768px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-tablet-1x-tvvs871i.webp, /Business-promotion-Vite-Alexander/assets/stories-tablet-2x-DF1iOh--.webp"
+            media="(min-width: 768px)"
+          />
+          <!-- Мобилка до 767px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-mobile-1x-BtZjaZpz.webp, /Business-promotion-Vite-Alexander/assets/stories-mobile-2x-Dscu73uV.webp"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="stories-img"
+            src="/Business-promotion-Vite-Alexander/assets/stories-tablet-2x-DF1iOh--.webp"
+            alt="stories"
+          />
+        </picture>
+        <div class="stories-list-content">
+          <h3 class="stories-subtitle">
+            By <span class="span-text">Wahid Ari</span> | 03 March 2019
+          </h3>
+          <a href="" class="stories-link"
+            >Increasing Prosperity With Positive Thinking</a
+          >
+        </div>
+      </li>
+      <li class="stories-list-item">
+        <picture>
+          <!-- Десктоп от 1150px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-tablet1-1x-B3AA84TG.webp, /Business-promotion-Vite-Alexander/assets/stories-tablet1-2x-DW8XvmQ_.webp"
+            media="(min-width: 1150px)"
+          />
+          <!-- Планшет от 768px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-tablet1-1x-B3AA84TG.webp, /Business-promotion-Vite-Alexander/assets/stories-tablet1-2x-DW8XvmQ_.webp"
+            media="(min-width: 768px)"
+          />
+          <!-- Мобилка до 767px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-mobile1-1x-il3CXBc4.webp, /Business-promotion-Vite-Alexander/assets/stories-mobile1-2x-DEFzCRsS.webp"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="stories-img"
+            src="/Business-promotion-Vite-Alexander/assets/stories-tablet1-2x-DW8XvmQ_.webp"
+            alt="stories"
+          />
+        </picture>
+        <div class="stories-list-content">
+          <h3 class="stories-subtitle">
+            By <span class="span-text">Wahid Ari</span> | 03 March 2019
+          </h3>
+          <a href="" class="stories-link"
+            >Motivation Is The First Step To Success</a
+          >
+        </div>
+      </li>
+      <li class="stories-list-item">
+        <picture>
+          <!-- Десктоп от 1150px -->
+          <source
+            srcset="data:image/webp;base64,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, /Business-promotion-Vite-Alexander/assets/stories-tablet2-2x-B98L-5ie.webp"
+            media="(min-width: 1150px)"
+          />
+          <!-- Планшет от 768px -->
+          <source
+            srcset="data:image/webp;base64,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, /Business-promotion-Vite-Alexander/assets/stories-tablet2-2x-B98L-5ie.webp"
+            media="(min-width: 768px)"
+          />
+          <!-- Мобилка до 767px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-mobile2-1x-B2Dztzum.webp, /Business-promotion-Vite-Alexander/assets/stories-mobile2-2x-BHgvnz_p.webp"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="stories-img"
+            src="/Business-promotion-Vite-Alexander/assets/stories-tablet2-2x-B98L-5ie.webp"
+            alt="stories"
+          />
+        </picture>
+        <div class="stories-list-content">
+          <h3 class="stories-subtitle">
+            By <span class="span-text">Wahid Ari</span> | 03 March 2019
+          </h3>
+          <a href="" class="stories-link"
+            >Success Steps For Your Personal Or Business</a
+          >
+        </div>
+      </li>
+      <li class="stories-list-item">
+        <picture>
+          <!-- Десктоп от 1150px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-tablet3-1x-ClWvDHWM.webp, /Business-promotion-Vite-Alexander/assets/stories-tablet3-2x-DbHc8Q7N.webp"
+            media="(min-width: 1150px)"
+          />
+          <!-- Планшет от 768px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-tablet3-1x-ClWvDHWM.webp, /Business-promotion-Vite-Alexander/assets/stories-tablet3-2x-DbHc8Q7N.webp"
+            media="(min-width: 768px)"
+          />
+          <!-- Мобилка до 767px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-mobile3-1x-BHVHcJcm.webp, /Business-promotion-Vite-Alexander/assets/stories-mobile3-2x-Cc9HV3Gs.webp"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="stories-img"
+            src="/Business-promotion-Vite-Alexander/assets/stories-tablet3-2x-DbHc8Q7N.webp"
+            alt="stories"
+          />
+        </picture>
+        <div class="stories-list-content">
+          <h3 class="stories-subtitle">
+            By <span class="span-text">Wahid Ari</span> | 03 March 2019
+          </h3>
+          <a href="" class="stories-link"
+            >Increasing Prosperity With Positive Thinking</a
+          >
+        </div>
+      </li>
+      <li class="stories-list-item">
+        <picture>
+          <!-- Десктоп от 1150px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-tablet4-1x-BZVXIAil.webp, /Business-promotion-Vite-Alexander/assets/stories-tablet4-2x-eViRK1Aq.webp"
+            media="(min-width: 1150px)"
+          />
+          <!-- Планшет от 768px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-tablet4-1x-BZVXIAil.webp, /Business-promotion-Vite-Alexander/assets/stories-tablet4-2x-eViRK1Aq.webp"
+            media="(min-width: 768px)"
+          />
+          <!-- Мобилка до 767px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-mobile4-1x-l-DMUgKI.webp, /Business-promotion-Vite-Alexander/assets/stories-mobile4-2x-DeuC45bc.webp"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="stories-img"
+            src="/Business-promotion-Vite-Alexander/assets/stories-tablet4-2x-eViRK1Aq.webp"
+            alt="stories"
+          />
+        </picture>
+        <div class="stories-list-content">
+          <h3 class="stories-subtitle">
+            By <span class="span-text">Wahid Ari</span> | 03 March 2019
+          </h3>
+          <a href="" class="stories-link"
+            >Motivation Is The First Step To Success</a
+          >
+        </div>
+      </li>
+      <li class="stories-list-item">
+        <picture>
+          <!-- Десктоп от 1150px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-tablet5-1x-Ut8cgX5R.webp, /Business-promotion-Vite-Alexander/assets/stories-tablet5-2x-BPWddbEZ.webp"
+            media="(min-width: 1150px)"
+          />
+          <!-- Планшет от 768px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-tablet5-1x-Ut8cgX5R.webp, /Business-promotion-Vite-Alexander/assets/stories-tablet5-2x-BPWddbEZ.webp"
+            media="(min-width: 768px)"
+          />
+          <!-- Мобилка до 767px -->
+          <source
+            srcset="/Business-promotion-Vite-Alexander/assets/stories-mobile5-1x-BVN1MTpH.webp, /Business-promotion-Vite-Alexander/assets/stories-mobile5-2x-BgEcwrHu.webp"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="stories-img"
+            src="/Business-promotion-Vite-Alexander/assets/stories-tablet5-2x-BPWddbEZ.webp"
+            alt="stories"
+          />
+        </picture>
+        <div class="stories-list-content">
+          <h3 class="stories-subtitle">
+            By <span class="span-text">Wahid Ari</span> | 03 March 2019
+          </h3>
+          <a href="" class="stories-link"
+            >Success Steps For Your Personal Or Business</a
+          >
+        </div>
+      </li>
+    </ul>
+
+    <a href="#" class="stories-end-link"
+      >More Stories
+      <svg
+        class="stories-end-icon"
+        width="21"
+        height="20"
+        viewBox="0 0 21 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11.67 11H5.5V9H11.67L9.09 6.41L10.5 5L15.5 10L10.5 15L9.09 13.59L11.67 11Z"
+          fill="#2E3A59"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0.5 10C0.5 4.47715 4.97715 -4.82823e-07 10.5 0C16.0228 4.82823e-07 20.5 4.47715 20.5 10C20.5 15.5228 16.0228 20 10.5 20C4.97715 20 0.5 15.5228 0.5 10ZM2.5 10C2.5 5.58172 6.08172 2 10.5 2C14.9183 2 18.5 5.58172 18.5 10C18.5 14.4183 14.9183 18 10.5 18C6.08172 18 2.5 14.4183 2.5 10Z"
+          fill="#2E3A59"
+        />
+      </svg>
+    </a>
+  </div>
+</section>
+
+      <section class="form">
+  <div class="container">
+    <h2 class="form-title">Contact Us</h2>
+    <p class="form-text">
+      Need more detailed information? Get in touch with us.
+    </p>
+
+    <ul class="form-list-icons">
+      <li class="form-item-icons">
+        <a href="#" class="form-social-link" target="_blank" rel="noopener">
+          <svg class="form-icons" width="24" height="24">
+            <use href="/Business-promotion-Vite-Alexander/assets/icons-LooO4xkB.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="form-item-icons">
+        <a href="#" class="form-social-link" target="_blank" rel="noopener">
+          <svg class="form-icons" width="24" height="24">
+            <use href="/Business-promotion-Vite-Alexander/assets/icons-LooO4xkB.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="form-item-icons">
+        <a href="#" class="form-social-link" target="_blank" rel="noopener">
+          <svg class="form-icons" width="24" height="24">
+            <use href="/Business-promotion-Vite-Alexander/assets/icons-LooO4xkB.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="form-map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dYOUR_ZOOM!2dLONGITUDE!3dLATITUDE!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zВАШ_АДРЕС!5e0!3m2!1sru!2sua!4vTIMESTAMP"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+
+    <div class="form-input-box">
+      <h3 class="form-subtitle">Send a message</h3>
+
+      <div class="form-message" id="contact-page-message"></div>
+
+      <form id="contact-page-form">
+        <ul class="form-input-list">
+          <li class="input-item">
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              id="contact-name"
+              placeholder="Your Name"
+              required
+            />
+          </li>
+          <li class="input-item">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="contact-email"
+              placeholder="Your Email"
+              required
+            />
+          </li>
+          <li class="input-item">
+            <textarea
+              class="form-textarea"
+              name="message"
+              id="contact-message"
+              placeholder="Your Message"
+              rows="6"
+              required
+            ></textarea>
+          </li>
+          <li class="input-item btn-input">
+            <button type="submit" class="form-btn">Send</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo-social">
+        <a href="./index.html" class="footer-logo">
+          <img src="data:image/webp;base64,UklGRnoCAABXRUJQVlA4WAoAAAAQAAAAJwAAIwAAQUxQSCgBAAABkFXbdthGB4IY5EEIg5hBy8BhkDDwMDAEDQNDEARDeBAE4X74NpaDICImgKujBV8ZqSzfECmpfUGkju/rdvn7NQH3P9oV5X8WeDtN48ouNWBzbVjZJekNpRtNMNX2YV3uh0gde8DiVn51tgW85SuUbjp5Sn2G1anAanTXyImS7gWTew3JwtM1KK4O0ULppgNp9uXzzSVsRjfYTHJyNSqs7gHV6Ey4G8sHy5jpW0o6WD+oLj/vsg2au8FmUkNnQrYDu2lDGjzdBshuIzKIdDNM7jWgBWyyPaC6x6n9BUzyFUjTcctsf27YxWTAU7b+8eDscpiBdI9hLNIK/JNNxvGswCQ/X3GMdAn0S5r8DKyHZHCkWQFKlVqMIlJSlgOUGxfGrgy+srQ7FlZQOCAsAQAAcAcAnQEqKAAkAD6RPpdIJaOiIScu2LASCWwAuzMl+L+8cd30X4Dboc7duAHsQegB5YvshA/L2iAgAnByYofYMHbE9cAA/vXAP//6KbbIx//909ftPViBAIGPXLdvs634iRl6FaW0HOCGr82qwqndw37EobRhm8b8Jme4OtIbYVHbMTch+jVmrkaRsDEI79Cske2oH+OkG6tHn9o6+TdR2fFn9O/B0wo4sZzB/6KV6JeXlACD9W+be8XEDm5JTFKVduxoAopZNk9d+U1XxB3zOPH7XN/ljMCU22Az9UCFCacN9iaz/7bP//cUVYyROUoT9UD/5bvo7GY75wZ+n/YPP5A//0Nyl6xF4pKRb0QGdrKPjI9OMPQ3X+xEokzTrjFava7Rs8PfAob6MAAA" alt="logo" />Product
+        </a>
+        <ul class="footer-list-icons">
+          <li class="footer-item-icons">
+            <a href="#" class="footer-social-link">
+              <svg class="footer-icons" width="24" height="24">
+                <use href="/Business-promotion-Vite-Alexander/assets/icons-LooO4xkB.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-item-icons">
+            <a href="#" class="footer-social-link">
+              <svg class="footer-icons" width="24" height="24">
+                <use href="/Business-promotion-Vite-Alexander/assets/icons-LooO4xkB.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-item-icons">
+            <a href="#" class="footer-social-link">
+              <svg class="footer-icons" width="24" height="24">
+                <use href="/Business-promotion-Vite-Alexander/assets/icons-LooO4xkB.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-resource-item">
+        <p class="footer-resource-text">Resource</p>
+        <ul class="footer-resource-list">
+          <li class="footer-list-item">
+            <a href="" class="footer-resource-link">About Us</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="" class="footer-resource-link">Blog</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="" class="footer-resource-link">Contact</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="" class="footer-resource-link">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-legal-item">
+        <p class="footer-legal-text">Legal Stuff</p>
+        <ul class="footer-legal-list">
+          <li class="footer-list-item">
+            <a href="" class="footer-legal-link">Disclaimer</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="" class="footer-legal-link">Financing</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="" class="footer-legal-link">Privacy Policy</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="" class="footer-legal-link">Terms of Service</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-energy-deal">
+        <p class="footer-deal-text">
+          knowing you're always on the best energy deal.
+        </p>
+
+        <div class="footer-input-wrapper">
+          <svg class="footer-input-icons" width="18" height="28">
+            <use href="/Business-promotion-Vite-Alexander/assets/icons-LooO4xkB.svg#icon-mobile-screen"></use>
+          </svg>
+          <input
+            type="tel"
+            class="footer-input"
+            id="footer-phone"
+            placeholder="Enter your phone number"
+            required
+          />
+        </div>
+
+        <div class="footer-btn-wrapper">
+          <button type="button" class="footer-btn" id="footer-submit-btn">
+            Get a call back
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer-copyright">
+      Made With Love By Figmaland All Right Reserved
+    </p>
+  </div>
+</footer>
+
+
+    <div class="mobile-menu">
+  <div class="modal-menu">
+    <button class="menu-close-btn" data-modal-close type="button">
+      <svg class="menu-close-icon" width="8" height="8">
+        <use href="/Business-promotion-Vite-Alexander/assets/icons-LooO4xkB.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <div class="header-menu">
+      <nav class="mobile-nav">
+        <ul class="mobile-list">
+          <li class="mobile-item">
+            <a href="./Product.html" class="mobile-link current">Product</a>
+          </li>
+          <li class="mobile-item">
+            <a href="./Pricing.html" class="mobile-link">Pricing</a>
+          </li>
+          <li class="mobile-item">
+            <a href="./Customer.html" class="mobile-link">Customer</a>
+          </li>
+          <li class="mobile-item">
+            <a href="./Resources.html" class="mobile-link">Resources</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="mobile-socials">
+        <li>
+          <a href="#" class="mobile-social-link">
+            <svg class="mobile-social-icon">
+              <use href="/Business-promotion-Vite-Alexander/assets/icons-LooO4xkB.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mobile-social-link">
+            <svg class="mobile-social-icon">
+              <use href="/Business-promotion-Vite-Alexander/assets/icons-LooO4xkB.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mobile-social-link">
+            <svg class="mobile-social-icon">
+              <use href="/Business-promotion-Vite-Alexander/assets/icons-LooO4xkB.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-auth unauth">
+        <ul class="header-list-btn">
+          <li class="header-item-btn">
+            <button class="mobile-header-btn-in" data-modal-open="signin">
+              Sign In
+            </button>
+          </li>
+          <li class="header-item-btn">
+            <button class="mobile-header-btn-up" data-modal-open="signup">
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu-user auth" style="display: none">
+        <span class="user-name-mobile"
+          >Welcome, <span id="mobile-user-name"></span
+        ></span>
+        <button type="button" class="logout-btn-mobile">Logout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="backdrop" data-modal="signin">
+  <div class="modal">
+    <button type="button" class="modal-close" data-modal-close>✖</button>
+    <h2 class="modal-title">Sign In</h2>
+    <form class="modal-form" id="signin-form">
+      <label>
+        <input type="email" name="email" placeholder="Email" required />
+      </label>
+      <label class="password-label">
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+          class="password-input"
+        />
+        <button
+          type="button"
+          class="toggle-password"
+          aria-label="Показать пароль"
+        >
+          👁️
+        </button>
+      </label>
+
+      <div class="error-message" id="signin-error"></div>
+
+      <button type="submit" class="modal-submit">Login</button>
+    </form>
+  </div>
+</div>
+
+    <div class="backdrop" data-modal="signup">
+  <div class="modal">
+    <button type="button" class="modal-close" data-modal-close>✖</button>
+    <h2 class="modal-title">Sign Up</h2>
+    <form class="modal-form" id="signup-form">
+      <label>
+        <input type="text" name="name" placeholder="Name" required />
+      </label>
+      <label>
+        <input type="email" name="email" placeholder="Email" required />
+      </label>
+      <label class="password-label">
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+          class="password-input"
+        />
+        <button
+          type="button"
+          class="toggle-password"
+          aria-label="Показать пароль"
+        >
+          👁️
+        </button>
+      </label>
+
+      <div class="error-message" id="signup-error"></div>
+
+      <button type="submit" class="modal-submit">Register</button>
+    </form>
+  </div>
+</div>
+
+
+  </body>
+</html>
