@@ -1,39 +1,43 @@
 const questionItems = document.querySelectorAll('.question-list-item');
 
+// правильные пути для Vite и GitHub Pages
+const PLUS_ICON = new URL('./img/plus.webp', import.meta.url).href;
+const MINUS_ICON = new URL('./img/minus.webp', import.meta.url).href;
+
 questionItems.forEach(item => {
   const header = item.querySelector('.question-header');
 
   header.addEventListener('click', () => {
     const isActive = item.classList.contains('active');
 
-    // Закрываем все вопросы
+    // закрываем все вопросы
     questionItems.forEach(el => {
       el.classList.remove('active');
 
       const icon = el.querySelector('.question-icon');
       if (icon) {
-        icon.src = '/img/plus.webp'; // ← ТАК (без точки и слеша)
+        icon.src = PLUS_ICON;
       }
     });
 
-    // Если кликнули по закрытому — открываем
+    // если кликнули по закрытому — открыть
     if (!isActive) {
       item.classList.add('active');
 
       const icon = item.querySelector('.question-icon');
       if (icon) {
-        icon.src = '/img/minus.webp'; // ← ТАК
+        icon.src = MINUS_ICON;
       }
     }
   });
 });
 
-// Начальное состояние — все закрыты и плюсики
+// начальное состояние — все закрыты и плюсики
 questionItems.forEach(el => {
   el.classList.remove('active');
 
   const icon = el.querySelector('.question-icon');
   if (icon) {
-    icon.src = '/img/plus.webp'; // ← ТАК
+    icon.src = PLUS_ICON;
   }
 });
