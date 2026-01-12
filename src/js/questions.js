@@ -1,8 +1,8 @@
 const questionItems = document.querySelectorAll('.question-list-item');
 
 // правильные пути для Vite и GitHub Pages
-const PLUS_ICON = new URL('./img/plus.webp', import.meta.url).href;
-const MINUS_ICON = new URL('./img/minus.webp', import.meta.url).href;
+const PLUS_ICON = new URL('/img/plus.webp', import.meta.url).href;
+const MINUS_ICON = new URL('/img/minus.webp', import.meta.url).href;
 
 questionItems.forEach(item => {
   const header = item.querySelector('.question-header');
