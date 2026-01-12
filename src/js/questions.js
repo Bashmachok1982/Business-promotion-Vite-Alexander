@@ -12,7 +12,7 @@ questionItems.forEach(item => {
 
       const icon = el.querySelector('.question-icon');
       if (icon) {
-        icon.src = '/img/plus.svg';
+        icon.src = './img/plus.webp';
       }
     });
 
@@ -22,7 +22,7 @@ questionItems.forEach(item => {
 
       const icon = item.querySelector('.question-icon');
       if (icon) {
-        icon.src = '/img/minus.svg';
+        icon.src = './img/minus.webp';
       }
     }
   });
@@ -34,6 +34,6 @@ questionItems.forEach(el => {
 
   const icon = el.querySelector('.question-icon');
   if (icon) {
-    icon.src = '/img/plus.svg';
+    icon.src = './img/plus.webp';
   }
 });
