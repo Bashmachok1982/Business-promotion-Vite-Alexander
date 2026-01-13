@@ -1,6 +1,5 @@
 const questionItems = document.querySelectorAll('.question-list-item');
 
-// правильные пути для Vite и GitHub Pages
 const PLUS_ICON = new URL('/img/plus.webp', import.meta.url).href;
 const MINUS_ICON = new URL('/img/minus.webp', import.meta.url).href;
 
@@ -10,7 +9,6 @@ questionItems.forEach(item => {
   header.addEventListener('click', () => {
     const isActive = item.classList.contains('active');
 
-    // закрываем все вопросы
     questionItems.forEach(el => {
       el.classList.remove('active');
 
@@ -20,7 +18,6 @@ questionItems.forEach(item => {
       }
     });
 
-    // если кликнули по закрытому — открыть
     if (!isActive) {
       item.classList.add('active');
 
@@ -32,7 +29,6 @@ questionItems.forEach(item => {
   });
 });
 
-// начальное состояние — все закрыты и плюсики
 questionItems.forEach(el => {
   el.classList.remove('active');
 
