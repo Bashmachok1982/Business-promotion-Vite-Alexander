@@ -97,7 +97,7 @@
     box-shadow 0.3s ease;
 }
 
-/* ======================== ОТ 768px (планшет и выше) ======================== */
+/* ======================== TABLET (min-width: 768px) ======================== */
 @media screen and (min-width: 768px) {
   .feature-list {
     flex-direction: row;

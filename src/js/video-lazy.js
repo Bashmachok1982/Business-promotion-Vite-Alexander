@@ -1,5 +1,3 @@
-// src/js/video-lazy.js
-
 document.addEventListener('DOMContentLoaded', () => {
   const placeholders = document.querySelectorAll('.video-placeholder');
 
