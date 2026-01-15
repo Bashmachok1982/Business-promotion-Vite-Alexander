@@ -33,14 +33,11 @@
   flex-direction: column;
 }
 
-.work-img,
-.support-img {
+.work-img {
   width: 100%;
   max-width: 320px;
   height: auto;
   display: block;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .work-info {

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/img/preview.png" alt="Project Preview" width="900">
+  <img src="./src/img/preview.webp" alt="Project Preview" width="900">
 </p>
 
 # ⭐ Business-promotion-Vite-Alexander

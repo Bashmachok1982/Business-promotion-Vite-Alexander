@@ -7,23 +7,34 @@
       <picture>
         <!-- Десктоп от 1150px -->
         <source
-          srcset="./img/effects-desktop-1x.webp, ./img/effects-desktop-2x.webp"
+          srcset="
+            ./img/effects-desktop-1x.webp 1x,
+            ./img/effects-desktop-2x.webp 2x
+          "
           media="(min-width: 1150px)"
+          type="image/webp"
         />
         <!-- Планшет от 768px -->
         <source
-          srcset="./img/effects-tablet-1x.webp, ./img/effects-tablet-2x.webp"
+          srcset="
+            ./img/effects-tablet-1x.webp 1x,
+            ./img/effects-tablet-2x.webp 2x
+          "
           media="(min-width: 768px)"
+          type="image/webp"
         />
         <!-- Мобилка до 767px -->
         <source
           srcset="./img/effects-mobile-1x.webp, ./img/effects-mobile-2x.webp"
           media="(max-width: 767px)"
+          type="image/webp"
         />
         <img
           class="effects-img"
           src="./img/effects-desktop-2x.webp"
           alt="effects"
+          width="528"
+          loading="lazy"
         />
       </picture>
       <ul class="effects-list">

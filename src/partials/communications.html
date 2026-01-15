@@ -35,22 +35,26 @@
       <picture class="communications-picture">
         <source
           srcset="
-            ./img/communications-desktop-1x.webp,
-            ./img/communications-desktop-2x.webp
+            ./img/communications-desktop-1x.webp 1x,
+            ./img/communications-desktop-2x.webp 2x
           "
           media="(min-width: 1150px)"
+          type="image/webp"
         />
         <source
           srcset="
-            ./img/communications-tablet-1x.webp,
-            ./img/communications-tablet-2x.webp
+            ./img/communications-tablet-1x.webp 1x,
+            ./img/communications-tablet-2x.webp 2x
           "
           media="(min-width: 768px)"
+          type="image/webp"
         />
         <img
           class="communications-img"
           src="./img/communications-mobile-2x.webp"
           alt="communications"
+          width="540"
+          loading="lazy"
         />
       </picture>
     </div>

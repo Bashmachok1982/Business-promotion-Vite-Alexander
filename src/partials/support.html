@@ -4,23 +4,37 @@
       <picture>
         <!-- Десктоп от 1150px -->
         <source
-          srcset="./img/support-desktop-1x.webp, ./img/support-desktop-2x.webp"
+          srcset="
+            ./img/support-desktop-1x.webp 1x,
+            ./img/support-desktop-2x.webp 2x
+          "
           media="(min-width: 1150px)"
+          type="image/webp"
         />
         <!-- Планшет от 768px -->
         <source
-          srcset="./img/support-tablet-1x.webp, ./img/support-tablet-2x.webp"
+          srcset="
+            ./img/support-tablet-1x.webp 1x,
+            ./img/support-tablet-2x.webp 2x
+          "
           media="(min-width: 768px)"
+          type="image/webp"
         />
         <!-- Мобилка до 767px -->
         <source
-          srcset="./img/support-mobile-1x.webp, ./img/support-mobile-2x.webp"
+          srcset="
+            ./img/support-mobile-1x.webp 1x,
+            ./img/support-mobile-2x.webp 2x
+          "
           media="(max-width: 767px)"
+          type="image/webp"
         />
         <img
           class="support-img"
           src="./img/support-desktop-2x.webp"
           alt="support"
+          width="540"
+          loading="lazy"
         />
       </picture>
     </div>

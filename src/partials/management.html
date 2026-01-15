@@ -29,31 +29,36 @@
         <!-- Десктоп от 1150px -->
         <source
           srcset="
-            ./img/management-desktop-1x.webp,
-            ./img/management-desktop-2x.webp
+            ./img/management-desktop-1x.webp 1x,
+            ./img/management-desktop-2x.webp 2x
           "
           media="(min-width: 1150px)"
+          type="image/webp"
         />
         <!-- Планшет от 768px -->
         <source
           srcset="
-            ./img/management-tablet-1x.webp,
-            ./img/management-tablet-2x.webp
+            ./img/management-tablet-1x.webp 1x,
+            ./img/management-tablet-2x.webp 2x
           "
           media="(min-width: 768px)"
+          type="image/webp"
         />
         <!-- Мобилка до 767px -->
         <source
           srcset="
-            ./img/management-mobile-1x.webp,
-            ./img/management-mobile-2x.webp
+            ./img/management-mobile-1x.webp 1x,
+            ./img/management-mobile-2x.webp 2x
           "
           media="(max-width: 767px)"
+          type="image/webp"
         />
         <img
           class="management-img"
           src="./img/management-desktop-2x.webp"
           alt="management"
+          width="540"
+          loading="lazy"
         />
       </picture>
     </div>

@@ -4,23 +4,28 @@
           <picture>
                   <!-- Десктоп от 1150px -->
                   <source
-                    srcset="./img/collaboration-desktop-1x.webp, ./img/collaboration-desktop-2x.webp"
+                    srcset="./img/collaboration-desktop-1x.webp 1x, ./img/collaboration-desktop-2x.webp 2x"
                     media="(min-width: 1150px)"
+                    type="image/webp"
                   />
                   <!-- Планшет от 768px -->
                   <source
-                    srcset="./img/collaboration-tablet-1x.webp, ./img/collaboration-tablet-2x.webp"
+                    srcset="./img/collaboration-tablet-1x.webp 1x, ./img/collaboration-tablet-2x.webp 2x"
                     media="(min-width: 768px)"
+                    type="image/webp"
                   />
                   <!-- Мобилка до 767px -->
                   <source
-                    srcset="./img/collaboration-mobile-1x.webp, ./img/collaboration-mobile-2x.webp"
+                    srcset="./img/collaboration-mobile-1x.webp 1x, ./img/collaboration-mobile-2x.webp 2x"
                     media="(max-width: 767px)"
+                    type="image/webp"
                   />
                   <img
                     class="collaboration-img"
                     src="./img/collaboration-desktop-2x.webp"
                     alt="collaboration"
+                    width="540"
+                    loading="lazy"
                   />
                 </picture>
         </div>
