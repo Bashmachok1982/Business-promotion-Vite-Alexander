@@ -21,9 +21,31 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="preload"
+      as="image"
+      fetchpriority="high"
+      href="/Business-promotion-Vite-Alexander/assets/hero-mobile-1x-D9D_1uJM.webp"
+      imagesrcset="
+    ./img/hero-mobile-1x.webp 1x,
+    ./img/hero-mobile-2x.webp 2x
+  "
+      media="(max-width: 767px)"
+    />
 
-    <script type="module" crossorigin src="/Business-promotion-Vite-Alexander/assets/main-Ttx5lbdW.js"></script>
-    <link rel="stylesheet" crossorigin href="/Business-promotion-Vite-Alexander/assets/main-D8_dXQYW.css">
+    <link
+      rel="preload"
+      as="image"
+      fetchpriority="high"
+      href="/Business-promotion-Vite-Alexander/assets/hero-tablet-1x-DBwHuD0T.webp"
+      imagesrcset="
+    ./img/hero-desktop-1x.webp 1x,
+    ./img/hero-desktop-2x.webp 2x
+  "
+      media="(min-width: 1150px)"
+    />
+    <script type="module" crossorigin src="/Business-promotion-Vite-Alexander/assets/main-CO5bK3yD.js"></script>
+    <link rel="stylesheet" crossorigin href="/Business-promotion-Vite-Alexander/assets/main-BZMRwGe9.css">
   </head>
 
   <body>
@@ -156,30 +178,36 @@
     </div>
     <div class="hero-image">
       <picture>
-        <!-- Десктоп от 1150px -->
+        <!-- Десктоп от 1150px  -->
         <source
-          srcset="/Business-promotion-Vite-Alexander/assets/hero-tablet-1x-DBwHuD0T.webp 1x, /Business-promotion-Vite-Alexander/assets/hero-desktop-2x-Dj0T8G3H.webp 2x"
           media="(min-width: 1150px)"
+          srcset="/Business-promotion-Vite-Alexander/assets/hero-tablet-1x-DBwHuD0T.webp 1x, /Business-promotion-Vite-Alexander/assets/hero-desktop-2x-Dj0T8G3H.webp 2x"
           type="image/webp"
         />
-        <!-- Планшет от 768px -->
+
+        <!-- Планшет 768–1149px -->
         <source
-          srcset="/Business-promotion-Vite-Alexander/assets/hero-tablet-1x-DBwHuD0T.webp 1x, /Business-promotion-Vite-Alexander/assets/hero-tablet-1x-DBwHuD0T.webp 2x"
           media="(min-width: 768px)"
+          srcset="/Business-promotion-Vite-Alexander/assets/hero-tablet-1x-DBwHuD0T.webp 1x, /Business-promotion-Vite-Alexander/assets/hero-tablet-1x-DBwHuD0T.webp 2x"
           type="image/webp"
         />
-        <!-- Мобилка до 767px -->
+
+        <!-- Мобилка до 767px  -->
         <source
-          srcset="/Business-promotion-Vite-Alexander/assets/hero-mobile-1x-D9D_1uJM.webp 1x, /Business-promotion-Vite-Alexander/assets/hero-mobile-2x-BOXZam5G.webp 2x"
           media="(max-width: 767px)"
+          srcset="/Business-promotion-Vite-Alexander/assets/hero-mobile-1x-D9D_1uJM.webp 1x, /Business-promotion-Vite-Alexander/assets/hero-mobile-2x-BOXZam5G.webp 2x"
           type="image/webp"
         />
+
         <img
           class="hero-img"
-          src="/Business-promotion-Vite-Alexander/assets/hero-desktop-2x-Dj0T8G3H.webp"
-          alt="amico"
+          src="/Business-promotion-Vite-Alexander/assets/hero-mobile-1x-D9D_1uJM.webp"
+          alt=""
           width="610"
-          loading="lazy"
+          height="555"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
         />
       </picture>
     </div>
@@ -1100,23 +1128,27 @@
     <button
       type="button"
       class="modal-close video-close"
-      aria-label="Close video"
+      aria-label="Закрыть видео"
       data-modal-close
     >
       <svg class="video-close-icon" width="18" height="18" aria-hidden="true">
         <use href="/Business-promotion-Vite-Alexander/assets/icons-nuLjo-l6.svg#icon-close"></use>
       </svg>
     </button>
+
     <div class="video-wrapper">
-      <iframe
-        id="promo-video-iframe"
-        src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
-        title="Product Demo Video"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+      <div class="video-placeholder" data-video-id="dQw4w9WgXcQ">
+        <img
+          src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+          alt="Превью видео: Product Demo"
+          loading="lazy"
+        />
+        <div class="play-button">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="#fff">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 </div>
