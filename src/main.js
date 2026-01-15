@@ -12,3 +12,4 @@ import './js/sign-in.js';
 import './js/sign-up.js';
 import './js/nav-select.js';
 import './js/communications-form.js';
+import './js/video-lazy.js';

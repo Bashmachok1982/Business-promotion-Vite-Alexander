@@ -3,23 +3,27 @@
     <button
       type="button"
       class="modal-close video-close"
-      aria-label="Close video"
+      aria-label="Закрыть видео"
       data-modal-close
     >
       <svg class="video-close-icon" width="18" height="18" aria-hidden="true">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
     </button>
+
     <div class="video-wrapper">
-      <iframe
-        id="promo-video-iframe"
-        src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
-        title="Product Demo Video"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+      <div class="video-placeholder" data-video-id="dQw4w9WgXcQ">
+        <img
+          src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+          alt="Превью видео: Product Demo"
+          loading="lazy"
+        />
+        <div class="play-button">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="#fff">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 </div>
