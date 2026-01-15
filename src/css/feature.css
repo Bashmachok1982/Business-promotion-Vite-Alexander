@@ -16,6 +16,8 @@
   color: #22343d;
   max-width: 330px;
   margin: 0 auto;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .feature-list {
@@ -43,9 +45,10 @@
   margin-bottom: 15px;
 }
 
-.feature-icon-wrap i {
-  font-size: 20px;
-  color: #fff;
+.feature-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }
 
 .feature-icon-wrap.green {
@@ -98,19 +101,25 @@
 @media screen and (min-width: 768px) {
   .feature-list {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 50px 0;
   }
 
   .feature-list-item {
-    width: calc((100% - 50px) / 2);
+    flex: 1;
     min-height: 212px;
+    max-width: 220px;
     justify-content: flex-start;
+  }
+
+  .feature-text {
+    text-align: center;
   }
 }
 
-/* ======================== ОТ 1150px (десктоп) ======================== */
+/* ======================== DESKTOP (min-width: 1150px) ======================== */
 @media screen and (min-width: 1150px) {
   .feature {
     padding: 24px 0;

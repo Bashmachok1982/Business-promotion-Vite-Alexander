@@ -1,4 +1,5 @@
 /* ======================== CHOICE SECTION ======================== */
+
 .choice {
   padding: 40px 0;
   background: #edfffc;
@@ -53,17 +54,20 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.choice-icon-wrap i {
-  font-size: 20px;
-  color: #fff;
+.choice-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }
 
 .choice-icon-wrap.green {
   background: #02897a;
 }
+
 .choice-icon-wrap.blue {
   background: #4d8dff;
 }
+
 .choice-icon-wrap.red {
   background: #f03e3d;
 }
@@ -99,13 +103,14 @@
 
   .choice-list {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 24px;
     justify-content: center;
   }
 
   .choice-list-item {
-    width: 356px;
+    width: auto;
+    flex: 1;
     max-width: 356px;
   }
 }
@@ -124,11 +129,12 @@
   .choice-list {
     gap: 24px;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .choice-list-item {
-    width: calc((100% - 48px) / 3);
+    width: auto;
+    flex: 1;
     max-width: 380px;
   }
 }
