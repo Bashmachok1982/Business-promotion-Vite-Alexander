@@ -150,7 +150,9 @@
 .pricing-list-content.featured .pricing-btn:hover {
   background: #f0f0f0;
 }
-
+.pricing-item-text.second-item {
+  margin-left: -80px;
+}
 /* ======================== TABLET (min-width: 768px) ======================== */
 @media (min-width: 768px) {
   .pricing {
