@@ -161,10 +161,8 @@
 
   .hero-btn-watch:hover,
   .hero-btn-watch:focus {
-    transform: scale(1.1);
-    background-color: #02a107;
-    color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    transform: scale(1.2);
+    color: #02a107;
   }
 
   .hero-image {
