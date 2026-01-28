@@ -15,14 +15,14 @@ if (contactForm) {
     contactMessage.style.color = '';
 
     if (!name || !email) {
-      contactMessage.textContent = 'Пожалуйста, заполните имя и email';
+      contactMessage.textContent = 'Please fill in your name and email';
       contactMessage.style.color = '#d93025';
       return;
     }
 
     // Успех — сообщение внутри модалки
     contactMessage.textContent =
-      'Спасибо! Наш эксперт свяжется с вами в ближайшее время.';
+      'Thank you! Our expert will contact you shortly.';
     contactMessage.style.color = '#02897a';
 
     // Очищаем форму

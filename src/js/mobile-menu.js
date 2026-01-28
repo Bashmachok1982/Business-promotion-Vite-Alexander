@@ -93,7 +93,7 @@
       // данные пользователя остаются!
       updateMobileMenuAuth();
       closeModal();
-      alert('Вы успешно вышли');
+      alert('You have successfully logged out.');
     });
   }
 

@@ -19,12 +19,13 @@ if (signupForm) {
     signupError.style.color = '#d93025';
 
     if (!name || !email || !password) {
-      signupError.textContent = 'Заполните все поля';
+      signupError.textContent = 'Please fill in all fields';
       return;
     }
 
     if (password.length < 6) {
-      signupError.textContent = 'Пароль должен быть не менее 6 символов';
+      signupError.textContent =
+        'The password must be at least 6 characters long.';
       return;
     }
 
@@ -34,13 +35,13 @@ if (signupForm) {
 
     loadCurrentUser();
 
-    signupError.textContent = 'Аккаунт создан!';
+    signupError.textContent = 'Account created!';
     signupError.style.color = '#02897a';
 
     const pendingPlan = sessionStorage.getItem('pendingPlan');
     if (pendingPlan) {
       alert(
-        `Спасибо за регистрацию и заказ тарифа "${pendingPlan}"! Мы свяжемся с вами.`
+        `Thank you for registering and ordering a tariff. "${pendingPlan}"! We will contact you.`
       );
       sessionStorage.removeItem('pendingPlan');
     }

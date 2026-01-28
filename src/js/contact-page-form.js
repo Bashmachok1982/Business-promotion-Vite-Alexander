@@ -15,12 +15,12 @@
     messageBlock.className = 'form-message';
 
     if (!name || !email) {
-      messageBlock.textContent = 'Пожалуйста, заполните имя и email';
+      messageBlock.textContent = 'Please fill in your name and email';
       messageBlock.classList.add('error');
       return;
     }
 
-    messageBlock.textContent = 'Спасибо! Мы свяжемся с вами в ближайшее время.';
+    messageBlock.textContent = 'Thank you! We will contact you shortly.';
     messageBlock.classList.add('success');
 
     form.reset();

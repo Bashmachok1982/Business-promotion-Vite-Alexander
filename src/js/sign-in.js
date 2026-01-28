@@ -19,14 +19,14 @@ if (signinForm) {
 
     const saved = localStorage.getItem(STORAGE_KEY);
     if (!saved) {
-      signinError.textContent = 'Пользователь не найден';
+      signinError.textContent = 'User not found';
       return;
     }
 
     const user = JSON.parse(saved);
 
     if (user.email !== email || user.password !== password) {
-      signinError.textContent = 'Неверный логин или пароль';
+      signinError.textContent = 'Incorrect login or password';
       return;
     }
 
@@ -34,7 +34,7 @@ if (signinForm) {
 
     loadCurrentUser();
 
-    signinError.textContent = 'Успешный вход!';
+    signinError.textContent = 'Successful login!';
     signinError.style.color = '#02897a';
 
     setTimeout(() => closeModalById('signin'), 800);

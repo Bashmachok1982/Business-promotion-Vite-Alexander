@@ -8,17 +8,17 @@ if (footerSubmitBtn && footerPhoneInput) {
 
     // Простая валидация: не пусто и хотя бы 9 символов
     if (!phone) {
-      alert('Пожалуйста, введите номер телефона');
+      alert('Please enter your phone number');
       return;
     }
 
     if (phone.replace(/\D/g, '').length < 9) {
-      alert('Пожалуйста, введите корректный номер телефона');
+      alert('Please enter a valid phone number.');
       return;
     }
 
     // Имитация успешной отправки
-    alert(`Спасибо! Мы свяжемся с вами по номеру ${phone} в ближайшее время.`);
+    alert(`Thank you! We will contact you at ${phone} shortly.`);
 
     // Очищаем поле
     footerPhoneInput.value = '';

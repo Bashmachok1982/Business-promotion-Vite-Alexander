@@ -9,17 +9,17 @@ if (communicationsForm) {
     const email = emailInput.value.trim();
 
     if (!email) {
-      alert('Пожалуйста, введите email');
+      alert('Please, enter email');
       return;
     }
 
     if (!email.includes('@')) {
-      alert('Введите корректный email');
+      alert('Please enter the correct email');
       return;
     }
 
     // имитация отправки
-    alert(`Спасибо! Мы свяжемся с вами по email: ${email}`);
+    alert(`Thank you! We will contact you by email.: ${email}`);
 
     // очистка поля
     emailInput.value = '';
